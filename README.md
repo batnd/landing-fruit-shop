@@ -2,7 +2,7 @@
 
 Самостоятельно выполненный проект в рамках обучения на курсе "Профессия Frontend-Разработчик" в онлайн-школе "Айтилогия".
 
-## Внешний вид
+## Внешний вид **[(Demo)](https://batnd.github.io/landing-fruit-shop/)**
 
 ![project-screen](project-image.jpg)
 
