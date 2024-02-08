@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exotic fruits</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/styles/slick.css">
+    <link rel="stylesheet" href="dist/styles/slick-theme.css">
+    <link rel="stylesheet" href="dist/styles/jquery-ui.min.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="dist/styles/styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header__container">
+        <a href="#" class="logo header__logo">
+            <img class="headerLogo-yellow" src="dist/images/Logo.png" alt="Logo Exotic fruits">
+            <img class="headerLogo-white" src="dist/images/logo_footer.png" alt="Logo Exotic fruits">
+        </a>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Товар дня</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Почему мы</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Наши фрукты</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Как заказать</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Отзывы</a>
+                </li>
+            </ul>
+            <button type="button" class="menuCloseButton">
+                <svg class="menuClose__exit-xmark" xmlns="http://www.w3.org/2000/svg" viewBox="-0.44 -0.44 26 26">
+                    <defs>
+                        <style>      .cls-1 {
+                            stroke-linecap: round;
+                            stroke-width: 3px;
+                            fill-rule: evenodd;
+                        }    </style>
+                    </defs>
+                    <path id="Shape_3_copy" data-name="Shape 3 copy" class="cls-1" d="M1822,5803l-23-23m23,0-23,23"
+                          transform="translate(-1797.94 -5778.94)"></path>
+                </svg>
+            </button>
+        </nav>
+        <div class="burger-menu burger-menuShow">
+            <svg class="burger-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" style="enable-background:new 0 0 512 512;" xml:space="preserve" viewBox="0 76 512 360"><g>	<g>		<path d="M492,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,236,492,236z"></path>	</g></g><g>	<g>		<path d="M492,76H20C8.954,76,0,84.954,0,96s8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,76,492,76z"></path>	</g></g><g>	<g>		<path d="M492,396H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20    C512,404.954,503.046,396,492,396z"></path>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+        </div>
+    </div>
+</header>
+
+<div class="header__background-shape"></div>
+
+<section class="description wow animate__zoomIn">
+    <div class="container description__container">
+        <div class="description__info">
+            <p class="description__title">
+                Только свежие экзотические фрукты в нашем магазине
+            </p>
+            <p class="description__description">
+                Вкусные и необычные фрукты, которые вы не найдете в магазине!
+            </p>
+            <div class="description__action">
+                <button id="scrollLookAtFruits" class="button description__button" type="button">Посмотреть фрукты
+                </button>
+            </div>
+        </div>
+        <div class="description__image">
+            <img src="dist/images/Description_image.png" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="about wow animate__fadeIn">
+    <div class="container about__container">
+        <div class="about__image">
+            <img class="about__image-blob" src="dist/images/about_blob.png" alt="">
+            <img class="about__fruit" src="dist/images/About_mango.png" alt="Mango">
+        </div>
+        <div class="about__info">
+            <p class="about__title sectionTitle">О нас</p>
+            <div class="about__description">
+                <p>Наш магазин поможет вам почувствовать вкус местных фруктов из различных уголков нашей планеты.
+                    Благодаря <span class="about__text-bold">5 летнему опыту работы на рынке</span>, мы отлично наладили
+                    поставки самых лучших фруктов из самых далеких стран.</p>
+                <p>Поэтому вы сможете насладиться ими через совсем небольшое время после оформления заказа. Также все
+                    фрукты проходят <span class="about__text-bold">ручной отбор</span>, поэтому на своем столе вы
+                    увидите только качественные и свежие продукты.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="side-palm-top">
+    <img src="dist/images/About_palm.png" alt="Palm">
+</div>
+
+<section class="daysProduct wow animate__fadeInUp">
+    <p class="daysProduct__title sectionTitle">Товар дня</p>
+    <div class="container daysProduct__container">
+        <div class="daysProduct__content">
+            <div class="daysProduct__carousel">
+                <button type="button" class="daysProduct__arrow arrow-prev">
+                    <svg class="daysProduct__arrow-prev-up"
+                            xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path fill-rule="evenodd" stroke="rgb(13, 26, 7)" stroke-width="1.5px" stroke-linecap="butt"
+                              stroke-linejoin="miter" fill="none"
+                              d="M1.750,8.750 L11.230,1.750 L20.750,8.750 "/>
+                    </svg>
+                    <svg class="daysProduct__arrow-prev-left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve" viewBox="117.74 0 276.52 512"><g>	<g>		<path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105    L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795    l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"></path>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                </button>
+                <div class="daysProduct__slider">
+                    <div class="slider__item-wrapper">
+                        <img class="slider__item event_slider__item-Mango" src="dist/images/daysProduct_img1.png"
+                             alt="Days Fruit - Mango" about="">
+                    </div>
+                    <div class="slider__item-wrapper">
+                        <img class="slider__item event_slider__item-Papaya" src="dist/images/daysProduct_img2.png"
+                             alt="Days Fruit - Papaya">
+                    </div>
+                    <div class="slider__item-wrapper">
+                        <img class="slider__item event_slider__item-DragonFruit" src="dist/images/daysProduct_img3.png"
+                             alt="Days Fruit - Dragon fruit">
+                    </div>
+                    <div class="slider__item-wrapper">
+                        <img class="slider__item event_slider__item-Lychee" src="dist/images/daysProduct_img4.png"
+                             alt="Days Fruit - Lychee">
+                    </div>
+                    <div class="slider__item-wrapper">
+                        <img class="slider__item event_slider__item-Durian" src="dist/images/daysProduct_img5.png"
+                             alt="Days Fruit - Durian">
+                    </div>
+                </div>
+                <button type="button" class="daysProduct__arrow arrow-next">
+                    <svg class="daysProduct__arrow-next-down"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="21px" height="10px">
+                        <path fill-rule="evenodd" stroke="rgb(13, 26, 7)" stroke-width="1.5px" stroke-linecap="butt"
+                              stroke-linejoin="miter" fill="none"
+                              d="M20.750,1.406 L11.270,8.406 L1.750,1.406 "/>
+                    </svg>
+                    <svg class="daysProduct__arrow-next-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve" viewBox="117.74 0 276.52 512"><g>	<g>		<path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105    L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795    l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"></path>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                </button>
+            </div>
+            <div class="daysProduct__fruits">
+                <img id="mainFruit-Mango" class="daysProduct__mainFruit daysProduct__mainFruit-selected"
+                     src="dist/images/daysProduct_img1.png" alt="Promotion Fruit - Mango">
+                <img id="mainFruit-Papaya" class="daysProduct__mainFruit" src="dist/images/daysProduct_img2.png"
+                     alt="Promotion Fruit - Papaya">
+                <img id="mainFruit-DragonFruit" class="daysProduct__mainFruit" src="dist/images/daysProduct_img3.png"
+                     alt="Promotion Fruit - Dragon fruit">
+                <img id="mainFruit-Lychee" class="daysProduct__mainFruit" src="dist/images/daysProduct_img4.png"
+                     alt="Promotion Fruit - Lychee">
+                <img id="mainFruit-Durian" class="daysProduct__mainFruit" src="dist/images/daysProduct_img5.png"
+                     alt="Promotion Fruit - Durian">
+                <div class="daysProduct__promo20">
+                    <svg class="daysProduct__promo20-blob" xmlns="http://www.w3.org/2000/svg"
+                         viewBox="18.05 25.99 155.65 156.37">
+                        <path fill="#fdde0b"
+                              d="M51.3,-51.3C65,-37.6,73.7,-18.8,73.7,0C73.7,18.8,65,37.6,51.3,53.9C37.6,70.2,18.8,84,1.8,82.2C-15.2,80.4,-30.3,63,-46.4,46.7C-62.5,30.3,-79.6,15.2,-81.7,-2.2C-83.9,-19.5,-71.3,-39.1,-55.2,-52.8C-39.1,-66.5,-19.5,-74.4,-0.4,-74C18.8,-73.6,37.6,-65,51.3,-51.3Z"
+                              transform="translate(100 100)"></path>
+                    </svg>
+                    <p class="daysProduct__promo20-text">-20%</p>
+                </div>
+            </div>
+            <div class="daysProduct__promotion">
+                <div class="daysProduct__timer">
+                    <p class="daysProduct__timerText">До конца акции осталось:</p>
+                    <div class="daysProduct__circle">
+                        <p class="daysProduct__bigNumber timerHours">26</p>
+                        <p class="daysProduct__smallText timerHoursText">часов</p>
+                    </div>
+                    <div class="daysProduct__circle">
+                        <p class="daysProduct__bigNumber timerMinutes">55</p>
+                        <p class="daysProduct__smallText timerMinutesText">минут</p>
+                    </div>
+                    <div class="daysProduct__circle">
+                        <p class="daysProduct__bigNumber timerSeconds">30</p>
+                        <p class="daysProduct__smallText timerSecondsText">секунд</p>
+                    </div>
+                </div>
+            </div>
+            <div class="daysProduct__description">
+                <div id="daysProduct__description-mango"
+                     class="daysProduct__description-fruit daysProduct__description-fruit-active">
+                    <p class="daysProduct__fruitTitle">Манго</p>
+                    <p class="daysProduct__fruitDescription">Предлагаем попробовать спелый и сочный манго по супер цене
+                        прямо из солнечного и далекого Вьетнама.</p>
+                    <p class="daysProduct__fruitPrice"><span class="boldPrice">Цена, кг:</span> 65 руб. <span
+                            class="crossedPrice">78 руб.</span></p>
+                    <button class="daysProduct_buttonOrder button button-action-order">Заказать</button>
+                    <div class="daysProduct__fruitSoldToday">
+                        <svg class="daysProduct__icon" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                             x="0px" y="0px" xml:space="preserve"
+                             viewBox="0 35.19 512 441.62"><path
+                                d="M504.348,90.259c-32.986-39.647-80.211-50.78-124.108-16.585c-2.153-13.552-7.715-26.51-16.636-38.483l-24.108,17.961    c19.34,25.956,10.395,52.143,2.722,66.211C286.814,90.725,151.282,73.92,88.461,240.647    C63.07,308.034,14.309,327.953,3.199,356.781c-28.887,74.954,143.057,180.777,305.792,76.21    c146.054-93.853,126.758-240.046,58.345-297.042c2.358-4.126,4.859-9.102,7.087-14.785C422.3,163.151,472.665,151.116,512,99.458    L504.348,90.259z"></path>
+                            </svg>
+                        <p>Сегодня это манго купили уже <span>25 раз!</span></p>
+                    </div>
+                </div>
+                <div id="daysProduct__description-papaya" class="daysProduct__description-fruit">
+                    <p class="daysProduct__fruitTitle">Папайя</p>
+                    <p class="daysProduct__fruitDescription">Предлагаем попробовать экзотическую папайю по супер цене
+                        прямо из солнечного и далекого Вьетнам.</p>
+                    <p class="daysProduct__fruitPrice"><span class="boldPrice">Цена, кг:</span> 85 руб. <span
+                            class="crossedPrice">102 руб.</span></p>
+                    <button class="daysProduct_buttonOrder button button-action-order">Заказать</button>
+                    <div class="daysProduct__fruitSoldToday">
+                        <svg class="daysProduct__icon" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                             x="0px" y="0px" xml:space="preserve"
+                             viewBox="0 35.19 512 441.62"><path
+                                d="M504.348,90.259c-32.986-39.647-80.211-50.78-124.108-16.585c-2.153-13.552-7.715-26.51-16.636-38.483l-24.108,17.961    c19.34,25.956,10.395,52.143,2.722,66.211C286.814,90.725,151.282,73.92,88.461,240.647    C63.07,308.034,14.309,327.953,3.199,356.781c-28.887,74.954,143.057,180.777,305.792,76.21    c146.054-93.853,126.758-240.046,58.345-297.042c2.358-4.126,4.859-9.102,7.087-14.785C422.3,163.151,472.665,151.116,512,99.458    L504.348,90.259z"></path>
+                            </svg>
+                        <p>Сегодня эту папайю купили уже <span>16 раз!</span></p>
+                    </div>
+                </div>
+                <div id="daysProduct__description-dragonFruit" class="daysProduct__description-fruit">
+                    <p class="daysProduct__fruitTitle">Питахайя</p>
+                    <p class="daysProduct__fruitDescription">Предлагаем попробовать один из самых экзотических фруктов -
+                        питахайя по супер цене
+                        прямо из солнечного и далекого Таиланда.</p>
+                    <p class="daysProduct__fruitPrice"><span class="boldPrice">Цена, кг:</span> 105 руб. <span
+                            class="crossedPrice">132 руб.</span></p>
+                    <button class="daysProduct_buttonOrder button button-action-order">Заказать</button>
+                    <div class="daysProduct__fruitSoldToday">
+                        <svg class="daysProduct__icon" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                             x="0px" y="0px" xml:space="preserve"
+                             viewBox="0 35.19 512 441.62"><path
+                                d="M504.348,90.259c-32.986-39.647-80.211-50.78-124.108-16.585c-2.153-13.552-7.715-26.51-16.636-38.483l-24.108,17.961    c19.34,25.956,10.395,52.143,2.722,66.211C286.814,90.725,151.282,73.92,88.461,240.647    C63.07,308.034,14.309,327.953,3.199,356.781c-28.887,74.954,143.057,180.777,305.792,76.21    c146.054-93.853,126.758-240.046,58.345-297.042c2.358-4.126,4.859-9.102,7.087-14.785C422.3,163.151,472.665,151.116,512,99.458    L504.348,90.259z"></path>
+                            </svg>
+                        <p>Сегодня этот фрукт купили уже <span>12 раз!</span></p>
+                    </div>
+                </div>
+                <div id="daysProduct__description-lychee" class="daysProduct__description-fruit">
+                    <p class="daysProduct__fruitTitle">Личи</p>
+                    <p class="daysProduct__fruitDescription">Предлагаем попробовать экзотический фрукт личи по супер
+                        цене
+                        прямо из солнечного и далекого Вьетнама.</p>
+                    <p class="daysProduct__fruitPrice"><span class="boldPrice">Цена, кг:</span> 45 руб. <span
+                            class="crossedPrice">58 руб.</span></p>
+                    <button class="daysProduct_buttonOrder button button-action-order">Заказать</button>
+                    <div class="daysProduct__fruitSoldToday">
+                        <svg class="daysProduct__icon" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                             x="0px" y="0px" xml:space="preserve"
+                             viewBox="0 35.19 512 441.62"><path
+                                d="M504.348,90.259c-32.986-39.647-80.211-50.78-124.108-16.585c-2.153-13.552-7.715-26.51-16.636-38.483l-24.108,17.961    c19.34,25.956,10.395,52.143,2.722,66.211C286.814,90.725,151.282,73.92,88.461,240.647    C63.07,308.034,14.309,327.953,3.199,356.781c-28.887,74.954,143.057,180.777,305.792,76.21    c146.054-93.853,126.758-240.046,58.345-297.042c2.358-4.126,4.859-9.102,7.087-14.785C422.3,163.151,472.665,151.116,512,99.458    L504.348,90.259z"></path>
+                            </svg>
+                        <p>Сегодня этот личи купили уже <span>27 раз!</span></p>
+                    </div>
+                </div>
+                <div id="daysProduct__description-durian" class="daysProduct__description-fruit">
+                    <p class="daysProduct__fruitTitle">Дуриан</p>
+                    <p class="daysProduct__fruitDescription">Предлагаем попробовать необычный фрукт дуриан по супер цене
+                        прямо из солнечного и далекого Вьетнама.</p>
+                    <p class="daysProduct__fruitPrice"><span class="boldPrice">Цена, кг:</span> 97 руб. <span
+                            class="crossedPrice">124 руб.</span></p>
+                    <button class="daysProduct_buttonOrder button button-action-order">Заказать</button>
+                    <div class="daysProduct__fruitSoldToday">
+                        <svg class="daysProduct__icon" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                             x="0px" y="0px" xml:space="preserve"
+                             viewBox="0 35.19 512 441.62"><path
+                                d="M504.348,90.259c-32.986-39.647-80.211-50.78-124.108-16.585c-2.153-13.552-7.715-26.51-16.636-38.483l-24.108,17.961    c19.34,25.956,10.395,52.143,2.722,66.211C286.814,90.725,151.282,73.92,88.461,240.647    C63.07,308.034,14.309,327.953,3.199,356.781c-28.887,74.954,143.057,180.777,305.792,76.21    c146.054-93.853,126.758-240.046,58.345-297.042c2.358-4.126,4.859-9.102,7.087-14.785C422.3,163.151,472.665,151.116,512,99.458    L504.348,90.259z"></path>
+                            </svg>
+                        <p>Сегодня этот дуриан купили уже <span>11 раз!</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="whyWe wow animate__fadeInUp">
+    <p class="whyWe__title sectionTitle">Почему мы</p>
+    <div class="container whyWe__container">
+        <div class="whyWe__advantages">
+            <div class="advantage">
+                <div class="advantage__blob">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="19.5 17.29 151.4 153.31">
+                        <path fill="#FDDE0B"
+                              d="M42,-67.7C53.5,-58,61.1,-44.7,65.7,-31.1C70.3,-17.4,71.9,-3.4,70.3,10.4C68.8,24.2,64,37.8,55.7,49.4C47.4,61.1,35.5,70.8,23.2,70.6C10.9,70.3,-1.9,60.1,-16.4,55.8C-30.9,51.5,-47.2,53.3,-59.6,47.1C-71.9,40.9,-80.4,26.8,-80.5,12.8C-80.6,-1.2,-72.3,-15.2,-64.5,-28.3C-56.7,-41.3,-49.3,-53.3,-38.7,-63.4C-28,-73.5,-14,-81.6,0.6,-82.6C15.3,-83.6,30.5,-77.5,42,-67.7Z"
+                              transform="translate(100 100)"></path>
+                    </svg>
+                    <svg class="advantage__icon" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                         style="enable-background:new 0 0 512 512;" xml:space="preserve" viewBox="26 0 460 512"><path d="M346,0c-5.522,0-10,4.478-10,10v46c0,5.522,4.478,10,10,10c5.522,0,10-4.478,10-10V10C356,4.478,351.522,0,346,0z"></path>
+                        <path d="M116,312c-5.52,0-10,4.48-10,10c0,5.52,4.48,10,10,10s10-4.48,10-10C126,316.48,121.52,312,116,312z"></path>
+                        <path d="M486,292c0-22.056-17.944-40-40-40h-74.652c11.557-29.603,16.235-64.447,15.333-95.464    c-0.172-5.919-0.399-9.342-0.706-11.497C385.458,123.432,367.716,106,346,106c-22.056,0-40,17.944-40,40v10    c0,63.246-81.214,98.781-142.504,114.019C158.862,259.425,148.284,252,136,252H36c-5.522,0-10,4.478-10,10v240    c0,5.522,4.478,10,10,10h100c12.202,0,22.719-7.327,27.401-17.809c5.075,1.302,9.786,2.532,14.135,3.668    C212.451,506.978,231.684,512,278.46,512H386c22.056,0,40-17.944,40-40c0-8.224-2.497-15.874-6.77-22.238    C434.678,444.359,446,429.599,446,412c0-8.194-2.436-15.869-6.696-22.262C454.684,384.326,466,369.6,466,352    c0-8.224-2.497-15.874-6.77-22.238C474.678,324.359,486,309.599,486,292z M146,482c0,5.514-4.486,10-10,10H46V272h90    c5.514,0,10,4.486,10,10V482z M446,312c-21.449,0-26.562,0-50,0c-5.522,0-10,4.478-10,10c0,5.522,4.478,10,10,10h30    c11.028,0,20,8.972,20,20c0,11.046-8.954,20-20,20h-50c-5.522,0-10,4.478-10,10c0,5.522,4.478,10,10,10h30    c10.897,0,20,8.705,20,20c0,11.046-8.954,20-20,20c-21.449,0-26.562,0-50,0c-5.522,0-10,4.478-10,10c0,5.522,4.478,10,10,10h30    c11.028,0,20,8.972,20,20s-8.972,20-20,20H278.46c-44.207,0-61.473-4.509-95.87-13.492c-5.039-1.316-10.566-2.759-16.59-4.295    V290.025C238.368,272.787,326,230.711,326,156v-10c0-11.028,8.972-20,20-20c11.008,0,19.979,8.958,20,19.969V146    c0,4.346,5.424,57.683-16.326,106H316c-5.522,0-10,4.478-10,10c0,5.522,4.478,10,10,10c6.983,0,118.602,0,130,0    c11.028,0,20,8.972,20,20C466,303.046,457.046,312,446,312z"></path>
+                        <path d="M116,352c-5.522,0-10,4.478-10,10v80c0,5.522,4.478,10,10,10c5.522,0,10-4.478,10-10v-80C126,356.478,121.522,352,116,352    z"></path>
+                        <path d="M266,126h-40c-5.522,0-10,4.478-10,10c0,5.522,4.478,10,10,10h40c5.522,0,10-4.478,10-10C276,130.478,271.522,126,266,126    z"></path>
+                        <path d="M466,126h-40c-5.522,0-10,4.478-10,10c0,5.522,4.478,10,10,10h40c5.522,0,10-4.478,10-10C476,130.478,471.522,126,466,126    z"></path>
+                        <path d="M437.921,44.079c-3.906-3.904-10.236-3.904-14.143,0l-28.279,28.279c-3.905,3.905-3.905,10.237,0,14.143    c3.907,3.905,10.236,3.904,14.143,0l28.279-28.279C441.826,54.317,441.826,47.985,437.921,44.079z"></path>
+                        <path d="M296.501,72.358l-28.279-28.279c-3.906-3.904-10.236-3.904-14.143,0c-3.905,3.905-3.905,10.237,0,14.143l28.279,28.279    c3.908,3.905,10.237,3.904,14.143,0C300.406,82.596,300.406,76.264,296.501,72.358z"></path></svg>
+                </div>
+                <p class="advantage__text">За 5 лет работы на рынке мы не получили ни одного негативного отзыва от наших
+                    клиентов</p>
+            </div>
+            <div class="advantage advantage__center">
+                <div class="advantage__blob">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="19.5 17.29 151.4 153.31">
+                        <path fill="#FDDE0B"
+                              d="M42,-67.7C53.5,-58,61.1,-44.7,65.7,-31.1C70.3,-17.4,71.9,-3.4,70.3,10.4C68.8,24.2,64,37.8,55.7,49.4C47.4,61.1,35.5,70.8,23.2,70.6C10.9,70.3,-1.9,60.1,-16.4,55.8C-30.9,51.5,-47.2,53.3,-59.6,47.1C-71.9,40.9,-80.4,26.8,-80.5,12.8C-80.6,-1.2,-72.3,-15.2,-64.5,-28.3C-56.7,-41.3,-49.3,-53.3,-38.7,-63.4C-28,-73.5,-14,-81.6,0.6,-82.6C15.3,-83.6,30.5,-77.5,42,-67.7Z"
+                              transform="translate(100 100)"></path>
+                    </svg>
+                    <svg class="advantage__icon" xmlns="http://www.w3.org/2000/svg" id="Capa_1"
+                         enable-background="new 0 0 512 512" viewBox="2.79 0 506.41 512">
+                        <g>
+                            <g>
+                                <path d="m258.773 181.506h-191.984c-4.142 0-7.499 3.358-7.499 7.499 0 4.142 3.357 7.499 7.499 7.499h191.985c4.142 0 7.499-3.358 7.499-7.499s-3.357-7.499-7.5-7.499z"></path>
+                                <path d="m258.773 234.202h-191.984c-4.142 0-7.499 3.358-7.499 7.499s3.357 7.499 7.499 7.499h191.985c4.142 0 7.499-3.358 7.499-7.499s-3.357-7.499-7.5-7.499z"></path>
+                                <path d="m258.773 286.897h-191.984c-4.142 0-7.499 3.358-7.499 7.499s3.357 7.499 7.499 7.499h191.985c4.142 0 7.499-3.358 7.499-7.499s-3.357-7.499-7.5-7.499z"></path>
+                                <path d="m266.273 347.093c0-4.142-3.357-7.499-7.499-7.499h-191.985c-4.142 0-7.499 3.358-7.499 7.499s3.357 7.499 7.499 7.499h191.985c4.142 0 7.499-3.357 7.499-7.499z"></path>
+                                <path d="m66.789 416.821c-4.142 0-7.499 3.358-7.499 7.499s3.357 7.499 7.499 7.499h96.238c4.142 0 7.499-3.358 7.499-7.499s-3.357-7.499-7.499-7.499z"></path>
+                                <path d="m345.194 92.853v-24.334c0-9.27-7.541-16.812-16.812-16.812h-153.967c-9.27 0-16.811 7.542-16.811 16.812v24.334c0 9.27 7.541 16.811 16.811 16.811h13.002c4.142 0 7.499-3.358 7.499-7.499 0-4.142-3.357-7.499-7.499-7.499h-13.002c-.999 0-1.812-.813-1.812-1.812v-24.335c0-.999.813-1.813 1.812-1.813h153.967c1 0 1.813.813 1.813 1.813v24.334c0 .999-.813 1.812-1.813 1.812h-105.905c-4.142 0-7.499 3.358-7.499 7.499 0 4.142 3.357 7.499 7.499 7.499h105.906c9.27.002 16.811-7.54 16.811-16.81z"></path>
+                                <path d="m401.268 457.296c-4.142 0-7.499 3.358-7.499 7.499v10.099c0 12.189-9.917 22.107-22.108 22.107h-331.762c-12.189 0-22.107-9.917-22.107-22.107v-360.466c0-1.623.19-3.215.529-4.764h68.283c14.256 0 25.854-11.598 25.854-25.854v-68.282c1.549-.339 3.14-.529 4.763-.529h254.439c12.19 0 22.108 9.917 22.108 22.107v99.842c0 4.142 3.357 7.499 7.499 7.499s7.499-3.358 7.499-7.499v-99.843c.001-20.459-16.645-37.105-37.105-37.105h-254.439c-9.911 0-19.23 3.86-26.238 10.868l-77.323 77.323c-7.008 7.008-10.867 16.326-10.867 26.238v360.466c0 20.46 16.645 37.105 37.105 37.105h331.762c20.46 0 37.106-16.646 37.106-37.105v-10.099c0-4.142-3.357-7.5-7.499-7.5zm-303.808-431.692v58.206c0 5.986-4.87 10.856-10.856 10.856h-58.206z"></path>
+                                <path d="m503.982 267.999c5.264-7.727 6.626-17.258 3.737-26.15s-9.594-15.802-18.394-18.958c-5.838-2.094-9.733-7.454-9.919-13.654-.283-9.345-4.784-17.857-12.349-23.353-7.563-5.495-17.051-7.144-26.023-4.526-5.958 1.738-12.255-.31-16.051-5.215-5.721-7.395-14.365-11.636-23.715-11.636-9.349 0-17.994 4.241-23.716 11.636-3.796 4.906-10.097 6.951-16.05 5.215-8.973-2.62-18.46-.969-26.025 4.526-7.564 5.496-12.063 14.007-12.347 23.352-.187 6.2-4.081 11.559-9.92 13.654-8.8 3.156-15.505 10.067-18.393 18.958-2.889 8.892-1.527 18.424 3.737 26.15 3.492 5.127 3.492 11.751 0 16.877-5.264 7.727-6.626 17.258-3.737 26.15 2.888 8.892 9.593 15.802 18.393 18.959 5.839 2.095 9.734 7.454 9.92 13.654.261 8.596 4.2 16.673 10.81 22.158 4.361 3.62 9.6 5.885 15.083 6.642v68.278c0 5.761 3.125 11.086 8.154 13.895 5.023 2.807 11.198 2.682 16.107-.341l27.505-16.932c.448-.277.715-.152.962 0l27.503 16.932c4.907 3.02 11.08 3.15 16.108.34 5.03-2.81 8.154-8.135 8.154-13.895v-68.279c5.481-.756 10.72-3.021 15.081-6.64 6.611-5.485 10.551-13.561 10.812-22.159.186-6.2 4.081-11.56 9.919-13.654 8.801-3.156 15.506-10.067 18.394-18.959 2.889-8.892 1.527-18.423-3.737-26.15-3.496-5.124-3.496-11.748-.003-16.875zm-66.867 173.499-27.504-16.932c-5.113-3.147-11.569-3.152-16.687 0l-27.504 16.931c-.626.381-1.399-.058-1.399-.782v-69.701c5.156-.597 10.268 1.501 13.531 5.718 5.723 7.394 14.367 11.635 23.717 11.635 9.349 0 17.993-4.241 23.714-11.635 3.264-4.218 8.377-6.315 13.532-5.718v69.701c0 .729-.783 1.164-1.4.783zm54.472-148.176c2.632 3.862 3.312 8.625 1.868 13.069s-4.795 7.898-9.194 9.476c-11.682 4.19-19.472 14.913-19.847 27.318-.133 4.361-2.05 8.292-5.397 11.07-3.763 3.123-8.859 4.301-13.781 2.865-11.913-3.476-24.52.62-32.116 10.434-2.859 3.695-7.18 5.815-11.853 5.815-4.672 0-8.993-2.119-11.854-5.815-5.799-7.496-14.52-11.656-23.623-11.656-2.818 0-5.674.399-8.49 1.221-4.97 1.448-10.051.234-13.784-2.865-3.347-2.778-5.264-6.709-5.395-11.069-.376-12.405-8.166-23.128-19.849-27.319-4.398-1.578-7.748-5.031-9.193-9.475-1.444-4.444-.764-9.208 1.868-13.07 6.987-10.257 6.987-23.51 0-33.767-2.632-3.862-3.312-8.626-1.868-13.071 1.444-4.444 4.795-7.898 9.193-9.475 11.683-4.191 19.473-14.914 19.849-27.319.141-4.671 2.389-8.925 6.17-11.671 3.779-2.747 8.519-3.571 13.008-2.263 11.91 3.477 24.52-.62 32.114-10.434 2.86-3.696 7.18-5.816 11.854-5.816 4.673 0 8.993 2.119 11.853 5.815 7.595 9.815 20.199 13.911 32.115 10.435 4.486-1.31 9.226-.485 13.007 2.262 3.781 2.746 6.031 7.001 6.171 11.671.376 12.405 8.166 23.129 19.848 27.319 4.399 1.577 7.749 5.031 9.194 9.475 1.444 4.444.764 9.209-1.868 13.07-6.989 10.258-6.989 23.513 0 33.77z"></path>
+                                <path d="m401.268 213.583c-34.658 0-62.854 28.196-62.854 62.854s28.196 62.854 62.854 62.854c34.657 0 62.853-28.196 62.853-62.854s-28.196-62.854-62.853-62.854zm0 110.71c-26.388 0-47.856-21.468-47.856-47.855s21.468-47.856 47.856-47.856 47.855 21.468 47.855 47.856-21.468 47.855-47.855 47.855z"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <p class="advantage__text">На все позиции есть сертификат, подтверждающий свежесть и безопасность
+                    закупаемых фруктов</p>
+            </div>
+            <div class="advantage">
+                <div class="advantage__blob">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="19.5 17.29 151.4 153.31">
+                        <path fill="#FDDE0B"
+                              d="M42,-67.7C53.5,-58,61.1,-44.7,65.7,-31.1C70.3,-17.4,71.9,-3.4,70.3,10.4C68.8,24.2,64,37.8,55.7,49.4C47.4,61.1,35.5,70.8,23.2,70.6C10.9,70.3,-1.9,60.1,-16.4,55.8C-30.9,51.5,-47.2,53.3,-59.6,47.1C-71.9,40.9,-80.4,26.8,-80.5,12.8C-80.6,-1.2,-72.3,-15.2,-64.5,-28.3C-56.7,-41.3,-49.3,-53.3,-38.7,-63.4C-28,-73.5,-14,-81.6,0.6,-82.6C15.3,-83.6,30.5,-77.5,42,-67.7Z"
+                              transform="translate(100 100)"></path>
+                    </svg>
+                    <svg class="advantage__icon" xmlns="http://www.w3.org/2000/svg" id="Capa_1"
+                         enable-background="new 0 0 512 512" viewBox="0 0 512 512">
+                        <path d="m73.918 350.497c0-.763-.121-1.542-.351-2.27-.864-2.858-13.187-41.722-49.268-63.387-8.355-5.018-9.373-8.438-9.213-8.859 1.417-3.722 17.348-10.081 41.806-5.484 30.04 5.643 51.235 28.64 51.437 28.862 2.783 3.083 7.539 3.329 10.624.548 3.085-2.779 3.331-7.53.549-10.613-.751-.832-14.53-15.87-36.444-25.988 2.635-12.523 5.828-24.889 9.52-36.839.257-.831.371-1.736.325-2.605-.068-1.314-2.091-32.518-38.914-60.694-3.358-2.57-4.578-4.34-5.003-5.154 1.222-.844 4.913-2.455 12.497-2.541.225-.003.449-.004.676-.004 22.726 0 55.987 12.966 79.748 42.152 2.622 3.219 7.359 3.705 10.582 1.088 3.223-2.618 3.711-7.351 1.089-10.571-9.949-12.22-21.123-21.739-32.518-28.965 11.149-19.827 23.632-36.557 37.178-49.778 2.971-2.9 3.027-7.659.123-10.626-2.904-2.969-7.665-3.024-10.637-.123-14.577 14.229-27.941 32.111-39.801 53.206-22.705-10.957-44.773-13.346-58.329-10.072-11.747 2.839-14.796 9.383-15.567 13.032-.997 4.717.069 12.066 10.814 20.289 27.601 21.12 32.19 43.144 32.911 48.427-3.413 11.198-6.403 22.732-8.926 34.41-2.956-.869-6.007-1.62-9.155-2.211-23.965-4.501-52.663-.805-58.647 14.911-2.056 5.399-2.773 16.098 15.524 27.084 28.789 17.288 40.45 48.459 42.347 54.039.241 29.655 8.94 58.558 25.227 83.663 2.405 3.708 7.656 4.524 11.082 1.725 2.927-2.392 3.598-6.732 1.543-9.899-14.934-23.024-22.829-49.564-22.829-76.753z"></path>
+                        <path d="m195.04 238.447c3.726 0 6.962-2.764 7.451-6.554 3.941-30.501 15.408-64.485 25.563-64.485 10.137 0 21.608 33.985 25.564 64.487.534 4.116 4.307 7.017 8.425 6.488 4.12-.532 7.028-4.299 6.496-8.414-.097-.749-2.434-18.566-7.819-36.695-8.174-27.519-18.859-40.896-32.665-40.896s-24.492 13.377-32.666 40.896c-5.385 18.129-7.722 35.945-7.819 36.695-.573 4.437 2.995 8.478 7.47 8.478z"></path>
+                        <path d="m458.068 182.151c-2.897-2.893-7.741-2.893-10.639 0l-63.114 63.05c-1.814-7.322-3.8-14.567-5.964-21.664.698-5.108 5.248-27.267 32.916-48.437 10.746-8.222 11.811-15.571 10.814-20.289-.771-3.649-3.819-10.193-15.567-13.031-13.557-3.274-35.621-.886-58.322 10.068-13.111-23.324-28.01-42.642-44.339-57.472-.028-.027-.056-.055-.084-.082-14.839-14.231-21.716-32.345-27.783-48.328-8.577-22.599-17.447-45.966-47.931-45.966-30.485 0-39.355 23.368-47.933 45.966-3.92 10.328-7.974 21.007-14.144 31.151-2.157 3.547-1.028 8.169 2.523 10.324 3.549 2.157 8.177 1.027 10.335-2.52 6.889-11.326 11.386-23.173 15.354-33.626 9.046-23.83 14.661-36.265 33.866-36.265s24.82 12.435 33.865 36.265c6.598 17.38 14.07 37.066 31.171 53.591.13.138.266.271.409.399 15.215 13.763 29.179 31.875 41.555 53.884-11.397 7.227-22.573 16.747-32.524 28.97-2.621 3.22-2.133 7.953 1.089 10.571 3.223 2.62 7.961 2.131 10.582-1.088 23.763-29.187 57.021-42.152 79.748-42.152 3.044 0 6.133.205 9.097.937 1.393.344 2.88.783 4.075 1.608-.425.814-1.645 2.584-5.003 5.154-36.823 28.176-38.846 59.38-38.914 60.694-.044.869.068 1.773.326 2.605 3.136 10.152 5.9 20.642 8.278 31.228l-100.891 100.79c-1.448-7.592-3.58-17.301-6.499-27.096-9.208-30.908-21.103-45.932-36.365-45.932s-27.157 15.024-36.365 45.932c-6.145 20.622-8.811 40.887-8.922 41.74-.519 4.006 2.353 7.807 6.355 8.396 4.108.604 8.031-2.347 8.565-6.467 4.052-31.264 16.859-74.572 30.366-74.572 12.977 0 25.331 40.098 29.867 70.982l-76.013 75.937c-2.896 2.894-2.896 7.734 0 10.628 16.813 16.796 36.139 29.648 56.859 38.581-3.559.233-7.132.357-10.714.357-42.984 0-84.339-17.252-113.461-47.333-2.887-2.984-7.651-3.065-10.636-.178-2.986 2.885-3.066 7.643-.178 10.626 31.942 32.991 77.238 51.913 124.277 51.913 14.269 0 28.427-1.716 42.121-5.066 14.207 3.311 28.771 4.975 43.387 4.975 50.242 0 101.081-19.536 139.981-58.397 76.137-76.061 78.166-197.793 4.524-271.361zm-15.163 260.733c-68.422 68.354-176.703 72.071-244.921 9.717l6.248-6.241c25.307 22.51 58.366 34.182 93.406 34.182 23.012 0 46.881-5.033 69.958-15.333 3.793-1.693 5.494-6.137 3.799-9.927-1.694-3.789-6.141-5.488-9.937-3.796-52.431 23.399-109.045 17.055-146.554-15.789l220.823-220.601c46.509 52.923 37.843 140.743-21.055 199.581-8.584 8.576-17.98 16.273-27.927 22.878-3.146 2.089-4.26 6.336-2.526 9.695 2.027 3.927 7.166 5.271 10.854 2.822 10.776-7.155 20.95-15.487 30.239-24.766 64.795-64.731 73.491-162.107 21.079-220.861l6.242-6.236c62.416 68.149 58.695 176.321-9.728 244.675z"></path>
+                        <ellipse cx="260.716" cy="416.937" rx="13.028" ry="13.014"></ellipse>
+                        <ellipse cx="307.323" cy="440.407" rx="13.028" ry="13.014"></ellipse>
+                        <ellipse cx="316.541" cy="396.839" rx="13.028" ry="13.014"></ellipse>
+                        <ellipse cx="364.522" cy="413.613" rx="13.028" ry="13.014"></ellipse>
+                        <ellipse cx="372.581" cy="367.452" rx="13.028" ry="13.014"></ellipse>
+                        <ellipse cx="413.602" cy="364.583" rx="13.028" ry="13.014"></ellipse>
+                        <ellipse cx="341.414" cy="336.317" rx="13.028" ry="13.014"></ellipse>
+                        <ellipse cx="396.814" cy="316.647" rx="13.028" ry="13.014"></ellipse>
+                        <ellipse cx="440.426" cy="307.442" rx="13.028" ry="13.014"></ellipse>
+                        <ellipse cx="416.929" cy="260.882" rx="13.028" ry="13.014"></ellipse>
+                    </svg>
+                </div>
+                <p class="advantage__text">Работаем с поставщиками из самых далеких стран, поэтому редкие фрукты вы
+                    сможете попробовать только у нас</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ourFruits wow animate__fadeInLeft">
+    <div class="ourFruits__title sectionTitle">Наши фрукты</div>
+    <div class="container ourFruits__container">
+        <ul class="ourFruits__switcher">
+            <li class="switcher__item switcher__item1">
+                <button class="item__button item__button-first item__button-selected" type="button">Все</button>
+            </li>
+            <li class="switcher__item switcher__item2">
+                <button class="item__button item__button-second" type="button">Самые редкие</button>
+            </li>
+            <li class="switcher__item switcher__item3">
+                <button class="item__button item__button-third" type="button">Акции</button>
+            </li>
+            <li class="switcher__item switcher__item4">
+                <button class="item__button item__button-last" type="button">Новинки</button>
+            </li>
+        </ul>
+        <div class="ourFruits__list">
+            <div id="ourFruits__mango" class="ourFruits__item itemShow">
+                <div class="item__image-wrapper">
+                    <img class="item__image" src="dist/images/daysProduct_img1.png" alt="Mango">
+                </div>
+                <p class="ourFruits__fruitTitle">Манго, Вьетнам</p>
+                <p class="ourFruits__fruitPrice">50 руб./кг</p>
+                <button class="button ourFruits__orderButton button-action-order" type="button">Заказать</button>
+            </div>
+            <div id="ourFruits__passionFruit" class="ourFruits__item itemShow">
+                <div class="item__image-wrapper">
+                    <img class="item__image" src="dist/images/ourFruits_passionFruit.png" alt="Passion Fruit">
+                </div>
+                <p class="ourFruits__fruitTitle">Маракуйя, Таиланд</p>
+                <p class="ourFruits__fruitPrice">45 руб./кг</p>
+                <button class="button ourFruits__orderButton button-action-order" type="button">Заказать</button>
+            </div>
+            <div id="ourFruits__papaya" class="ourFruits__item itemShow">
+                <div class="item__image-wrapper">
+                    <img class="item__image" src="dist/images/daysProduct_img2.png" alt="Papaya">
+                </div>
+                <p class="ourFruits__fruitTitle">Папайа, Вьетнам</p>
+                <p class="ourFruits__fruitPrice">85 руб./кг</p>
+                <button class="button ourFruits__orderButton button-action-order" type="button">Заказать</button>
+            </div>
+            <div id="ourFruits__dragonFruit" class="ourFruits__item itemShow">
+                <div class="item__image-wrapper">
+                    <img class="item__image" src="dist/images/daysProduct_img3.png" alt="Dragon Fruit">
+                </div>
+                <p class="ourFruits__fruitTitle">Питахайя, Таиланд</p>
+                <p class="ourFruits__fruitPrice">105 руб./кг</p>
+                <button class="button ourFruits__orderButton button-action-order" type="button">Заказать</button>
+            </div>
+            <div id="ourFruits__coconut" class="ourFruits__item itemShow">
+                <div class="item__image-wrapper">
+                    <img class="item__image" src="dist/images/ourFruits_coconut.png" alt="Coconut">
+                </div>
+                <p class="ourFruits__fruitTitle">Кокос, ЮАР</p>
+                <p class="ourFruits__fruitPrice">37 руб./кг</p>
+                <button class="button ourFruits__orderButton button-action-order" type="button">Заказать</button>
+            </div>
+            <div id="ourFruits__lychee" class="ourFruits__item itemShow">
+                <div class="item__image-wrapper">
+                    <img class="item__image" src="dist/images/daysProduct_img4.png" alt="Lychee">
+                </div>
+                <p class="ourFruits__fruitTitle">Личи, Вьетная</p>
+                <p class="ourFruits__fruitPrice">45 руб./кг</p>
+                <button class="button ourFruits__orderButton button-action-order" type="button">Заказать</button>
+            </div>
+            <div id="ourFruits__pineapple" class="ourFruits__item itemShow">
+                <div class="item__image-wrapper">
+                    <img class="item__image" src="dist/images/ourFruits_pineapple.png" alt="Pineapple">
+                </div>
+                <p class="ourFruits__fruitTitle">Ананас, Таиланд</p>
+                <p class="ourFruits__fruitPrice">48 руб./кг</p>
+                <button class="button ourFruits__orderButton button-action-order" type="button">Заказать</button>
+            </div>
+            <div id="ourFruits__durian" class="ourFruits__item itemShow">
+                <div class="item__image-wrapper">
+                    <img class="item__image" src="dist/images/daysProduct_img5.png" alt="Pineapple">
+                </div>
+                <p class="ourFruits__fruitTitle">Дуриан, Вьетнам</p>
+                <p class="ourFruits__fruitPrice">97 руб./кг</p>
+                <button class="button ourFruits__orderButton button-action-order" type="button">Заказать</button>
+            </div>
+            <div id="ourFruits__guava" class="ourFruits__item itemShow">
+                <div class="item__image-wrapper">
+                    <img class="item__image" src="dist/images/ourFruits_guava.png" alt="Pineapple">
+                </div>
+                <p class="ourFruits__fruitTitle">Гуава, Вьетнам</p>
+                <p class="ourFruits__fruitPrice">79 руб./кг</p>
+                <button class="button ourFruits__orderButton button-action-order" type="button">Заказать</button>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="side-palm-middle">
+    <img src="dist/images/ourFruits_palm.png" alt="Palm">
+</div>
+
+<section class="orderingGuide wow animate__bounceInLeft">
+    <p class="orderingGuide__title sectionTitle">Как заказать</p>
+    <div class="container orderingGuide__container">
+        <div class="orderingGuide__timeline">
+            <img class="orderingGuide__image" src="dist/images/howToOrder_timeline.png" alt="How to order guide">
+            <img class="orderingGuide__image1-2" src="dist/images/orderingGuide_timeline(1-2).png" alt="How to order guide 1-2">
+            <img class="orderingGuide__image2-2" src="dist/images/orderingGuide_timeline(2-2).png" alt="How to order guide 2-2">
+            <p class="orderingGuide__stage1 orderingGuide__text">Оформляете заказ на сайте</p>
+            <p class="orderingGuide__stage2 orderingGuide__text">Наши операторы свяжутся с вами для подтверждения
+                заказа</p>
+            <p class="orderingGuide__stage3 orderingGuide__text">Мы собираем ваш заказ и отправляем его курьеру</p>
+            <p class="orderingGuide__stage4 orderingGuide__text">Курьер привозит заказ и вы его оплачиваете при
+                получении</p>
+        </div>
+    </div>
+</section>
+
+<section class="reviews wow animate__fadeIn">
+    <p class="reviews__title sectionTitle">Отзывы</p>
+    <div class="container reviews__container">
+        <div class="reviews__content">
+            <button class="reviews__arrow reviews__arrow-prev" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                     id="Capa_1" x="0px" y="0px" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve"
+                     viewBox="117.74 0 276.52 512"><path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105    L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795    l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"></path></svg>
+            </button>
+            <div class="reviews__slider">
+                <div class="slider__wrapper">
+                    <img class="slider__blob" src="dist/images/reviews_blob.png" alt="Reviews blob">
+                    <div class="reviews__review">
+                        <div class="slider__aboutAuthor">
+                            <img class="author__photo" src="dist/images/reviews_author1.png" alt="">
+                            <p class="author__name">Анастасия</p>
+                        </div>
+                        <p class="slider__review">
+                            Не первый раз делаю заказ в этом магазине, всегда остаюсь довольна качеством редкий фруктов,
+                            которые реально не встретишь в магазине.
+                        </p>
+                    </div>
+                </div>
+                <div class="slider__wrapper">
+                    <img class="slider__blob" src="dist/images/reviews_blob.png" alt="Reviews blob">
+                    <div class="reviews__review">
+                        <div class="slider__aboutAuthor">
+                            <img class="author__photo" src="dist/images/reviews_author2.png" alt="">
+                            <p class="author__name">Александр</p>
+                        </div>
+                        <p class="slider__review">
+                            Отличный магазин, дети всегда радуются, когда приходит курьер с большим пакетом :) Спасибо
+                            магазину за вкусные и полезные фрукты!
+                        </p>
+                    </div>
+                </div>
+                <div class="slider__wrapper">
+                    <img class="slider__blob" src="dist/images/reviews_blob.png" alt="Reviews blob">
+                    <div class="reviews__review">
+                        <div class="slider__aboutAuthor">
+                            <img class="author__photo" src="dist/images/reviews_author3.png" alt="">
+                            <p class="author__name">Сергей</p>
+                        </div>
+                        <p class="slider__review">
+                            Люблю начинать новый день с экзотическими фруктами. Приобретаю фрукты в этом магазине уже
+                            давно. Рекомендую!.
+                        </p>
+                    </div>
+                </div>
+                <div class="slider__wrapper">
+                    <img class="slider__blob" src="dist/images/reviews_blob.png" alt="Reviews blob">
+                    <div class="reviews__review">
+                        <div class="slider__aboutAuthor">
+                            <img class="author__photo" src="dist/images/reviews_author4.png" alt="">
+                            <p class="author__name">Ирина</p>
+                        </div>
+                        <p class="slider__review">
+                            Вся моя семья обожает свежие и сочные фрукты! За качественными фруктами только сюда!.
+                        </p>
+                    </div>
+                </div>
+                <div class="slider__wrapper">
+                    <img class="slider__blob" src="dist/images/reviews_blob.png" alt="Reviews blob">
+                    <div class="reviews__review">
+                        <div class="slider__aboutAuthor">
+                            <img class="author__photo" src="dist/images/reviews_author5.png" alt="">
+                            <p class="author__name">Алена</p>
+                        </div>
+                        <p class="slider__review">
+                            Когда еду к внукам, всегда заказываю свежи фрукты здесь. Внуки очень любят манго и ананас, а
+                            это витамины. Большое спасибо за ваш труд!
+                        </p>
+                    </div>
+                </div>
+                <div class="slider__wrapper">
+                    <img class="slider__blob" src="dist/images/reviews_blob.png" alt="Reviews blob">
+                    <div class="reviews__review">
+                        <div class="slider__aboutAuthor">
+                            <img class="author__photo" src="dist/images/reviews_author6.png" alt="">
+                            <p class="author__name">Игорь</p>
+                        </div>
+                        <p class="slider__review">
+                            Обожаю ваши фрукты!!! Качество отменное, а сервис на высшем уровне! Пойду закажу еще манго
+                            :)
+                        </p>
+                    </div>
+                </div>
+                <div class="slider__wrapper">
+                    <img class="slider__blob" src="dist/images/reviews_blob.png" alt="Reviews blob">
+                    <div class="reviews__review">
+                        <div class="slider__aboutAuthor">
+                            <img class="author__photo" src="dist/images/reviews_author7.png" alt="">
+                            <p class="author__name">Виталий</p>
+                        </div>
+                        <p class="slider__review">
+                            Мы с женой каждую неделю заказываем здесь фрукты и всегда с нетерпением ждем доставку! :)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="reviews__arrow reviews__arrow-next" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                     id="Capa_1" x="0px" y="0px" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve"
+                     viewBox="117.74 0 276.52 512"><path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105    L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795    l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"></path></svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="faq wow animate__fadeIn">
+    <div class="faq__title sectionTitle">Часто задаваемые вопросы</div>
+    <div class="container faq__container">
+        <div id="accordion" class="faq__accordion">
+            <h3 class="accordion__heading accordion__heading-first">Сколько ждать доставку заказа после оформления?</h3>
+            <div class="accordion__text">
+                <p>В случае наличия всех товаров из вашего заказа, он будет доставлен в течении 2 часов.</p>
+            </div>
+            <h3 class="accordion__heading">Из каких стран доставляются фрукты?</h3>
+            <div class="accordion__text">
+                <p>Мы доставляем фрукты со всего света! Неполный список стран: Аргентина, Бразилия, ЮАР, Малайзия,
+                    Вьетнам, Таиланд и многие другие.</p>
+            </div>
+            <h3 class="accordion__heading">Можно ли вернуть заказ, если качество мне не понравилось?</h3>
+            <div class="accordion__text">
+                <p>Наши фрукты имеют наивысшее качество. К сожалению, как и с любыми продуктами у них возможен
+                    производственный или транспортный брак. В таком случае мы обменяем ваш заказ на новый без какой-либо
+                    доплаты!</p>
+            </div>
+            <h3 class="accordion__heading">Сколько стоит доставка?</h3>
+            <div class="accordion__text">
+                <p>Стоимость доставки зависит от стоимости заказа и адрес доставки. Минимальная стоимость доставки 300
+                    руб. по городу. При заказе на стоимость более 5000 руб. доставка будет бесплатной</p>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="side-palm-bottom">
+    <img class="palmBottomMain" src="dist/images/faq_palm.png" alt="Palm">
+    <img class="palmBottom320" src="dist/images/faq_palm(@320px).png" alt="Palm">
+</div>
+
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__content">
+            <div class="footer__logo-socials">
+                <a href="#" class="footer__logo logo">
+                    <img src="dist/images/logo_footer.png" alt="Logo Exotic fruits">
+                </a>
+                <div class="footer__socials">
+                    <a href="https://github.com/batnd?tab=repositories" class="socials facebook">
+                        <svg class="socials-icon" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                             id="Capa_2" x="0px" y="0px"
+                             xml:space="preserve" viewBox="0 0 97.75 97.75"><path
+                                d="M48.875,0C21.882,0,0,21.882,0,48.875S21.882,97.75,48.875,97.75S97.75,75.868,97.75,48.875S75.868,0,48.875,0z    M67.521,24.89l-6.76,0.003c-5.301,0-6.326,2.519-6.326,6.215v8.15h12.641L67.07,52.023H54.436v32.758H41.251V52.023H30.229V39.258   h11.022v-9.414c0-10.925,6.675-16.875,16.42-16.875l9.851,0.015V24.89L67.521,24.89z"></path>
+                            </svg>
+                    </a>
+                    <a href="https://github.com/batnd?tab=repositories" class="socials instagram">
+                        <svg class="socials-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="m305 256c0 27.0625-21.9375 49-49 49s-49-21.9375-49-49 21.9375-49 49-49 49 21.9375 49 49zm0 0"></path>
+                            <path d="m370.59375 169.304688c-2.355469-6.382813-6.113281-12.160157-10.996094-16.902344-4.742187-4.882813-10.515625-8.640625-16.902344-10.996094-5.179687-2.011719-12.960937-4.40625-27.292968-5.058594-15.503906-.707031-20.152344-.859375-59.402344-.859375-39.253906 0-43.902344.148438-59.402344.855469-14.332031.65625-22.117187 3.050781-27.292968 5.0625-6.386719 2.355469-12.164063 6.113281-16.902344 10.996094-4.882813 4.742187-8.640625 10.515625-11 16.902344-2.011719 5.179687-4.40625 12.964843-5.058594 27.296874-.707031 15.5-.859375 20.148438-.859375 59.402344 0 39.25.152344 43.898438.859375 59.402344.652344 14.332031 3.046875 22.113281 5.058594 27.292969 2.359375 6.386719 6.113281 12.160156 10.996094 16.902343 4.742187 4.882813 10.515624 8.640626 16.902343 10.996094 5.179688 2.015625 12.964844 4.410156 27.296875 5.0625 15.5.707032 20.144532.855469 59.398438.855469 39.257812 0 43.90625-.148437 59.402344-.855469 14.332031-.652344 22.117187-3.046875 27.296874-5.0625 12.820313-4.945312 22.953126-15.078125 27.898438-27.898437 2.011719-5.179688 4.40625-12.960938 5.0625-27.292969.707031-15.503906.855469-20.152344.855469-59.402344 0-39.253906-.148438-43.902344-.855469-59.402344-.652344-14.332031-3.046875-22.117187-5.0625-27.296874zm-114.59375 162.179687c-41.691406 0-75.488281-33.792969-75.488281-75.484375s33.796875-75.484375 75.488281-75.484375c41.6875 0 75.484375 33.792969 75.484375 75.484375s-33.796875 75.484375-75.484375 75.484375zm78.46875-136.3125c-9.742188 0-17.640625-7.898437-17.640625-17.640625s7.898437-17.640625 17.640625-17.640625 17.640625 7.898437 17.640625 17.640625c-.003906 9.742188-7.898437 17.640625-17.640625 17.640625zm0 0"></path>
+                            <path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm146.113281 316.605469c-.710937 15.648437-3.199219 26.332031-6.832031 35.683593-7.636719 19.746094-23.246094 35.355469-42.992188 42.992188-9.347656 3.632812-20.035156 6.117188-35.679687 6.832031-15.675781.714844-20.683594.886719-60.605469.886719-39.925781 0-44.929687-.171875-60.609375-.886719-15.644531-.714843-26.332031-3.199219-35.679687-6.832031-9.8125-3.691406-18.695313-9.476562-26.039063-16.957031-7.476562-7.339844-13.261719-16.226563-16.953125-26.035157-3.632812-9.347656-6.121094-20.035156-6.832031-35.679687-.722656-15.679687-.890625-20.6875-.890625-60.609375s.167969-44.929688.886719-60.605469c.710937-15.648437 3.195312-26.332031 6.828125-35.683593 3.691406-9.808594 9.480468-18.695313 16.960937-26.035157 7.339844-7.480469 16.226563-13.265625 26.035157-16.957031 9.351562-3.632812 20.035156-6.117188 35.683593-6.832031 15.675781-.714844 20.683594-.886719 60.605469-.886719s44.929688.171875 60.605469.890625c15.648437.710937 26.332031 3.195313 35.683593 6.824219 9.808594 3.691406 18.695313 9.480468 26.039063 16.960937 7.476563 7.34375 13.265625 16.226563 16.953125 26.035157 3.636719 9.351562 6.121094 20.035156 6.835938 35.683593.714843 15.675781.882812 20.683594.882812 60.605469s-.167969 44.929688-.886719 60.605469zm0 0"></path>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/batnd?tab=repositories" class="socials vkontakte">
+                        <svg class="socials-icon" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                             id="Capa_3" x="0px" y="0px"
+                             xml:space="preserve" viewBox="0 0 97.75 97.75"><path
+                                d="M48.875,0C21.883,0,0,21.882,0,48.875S21.883,97.75,48.875,97.75S97.75,75.868,97.75,48.875S75.867,0,48.875,0z    M73.667,54.161c2.278,2.225,4.688,4.319,6.733,6.774c0.906,1.086,1.76,2.209,2.41,3.472c0.928,1.801,0.09,3.776-1.522,3.883   l-10.013-0.002c-2.586,0.214-4.644-0.829-6.379-2.597c-1.385-1.409-2.67-2.914-4.004-4.371c-0.545-0.598-1.119-1.161-1.803-1.604   c-1.365-0.888-2.551-0.616-3.333,0.81c-0.797,1.451-0.979,3.059-1.055,4.674c-0.109,2.361-0.821,2.978-3.19,3.089   c-5.062,0.237-9.865-0.531-14.329-3.083c-3.938-2.251-6.986-5.428-9.642-9.025c-5.172-7.012-9.133-14.708-12.692-22.625   c-0.801-1.783-0.215-2.737,1.752-2.774c3.268-0.063,6.536-0.055,9.804-0.003c1.33,0.021,2.21,0.782,2.721,2.037   c1.766,4.345,3.931,8.479,6.644,12.313c0.723,1.021,1.461,2.039,2.512,2.76c1.16,0.796,2.044,0.533,2.591-0.762   c0.35-0.823,0.501-1.703,0.577-2.585c0.26-3.021,0.291-6.041-0.159-9.05c-0.28-1.883-1.339-3.099-3.216-3.455   c-0.956-0.181-0.816-0.535-0.351-1.081c0.807-0.944,1.563-1.528,3.074-1.528l11.313-0.002c1.783,0.35,2.183,1.15,2.425,2.946   l0.01,12.572c-0.021,0.695,0.349,2.755,1.597,3.21c1,0.33,1.66-0.472,2.258-1.105c2.713-2.879,4.646-6.277,6.377-9.794   c0.764-1.551,1.423-3.156,2.063-4.764c0.476-1.189,1.216-1.774,2.558-1.754l10.894,0.013c0.321,0,0.647,0.003,0.965,0.058   c1.836,0.314,2.339,1.104,1.771,2.895c-0.894,2.814-2.631,5.158-4.329,7.508c-1.82,2.516-3.761,4.944-5.563,7.471   C71.48,50.992,71.611,52.155,73.667,54.161z"></path>
+                            </svg>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__rights">
+                Все права защищены, 2020
+            </p>
+        </div>
+    </div>
+    <div class="footer__background-shape">
+        <svg class="background-shape footer__shape" xmlns="http://www.w3.org/2000/svg"
+             viewBox="-0.01 -0.01 1589.01 203.98">
+            <defs>
+                <style>      .cls-1 {
+                    fill: #fdde0b;
+                    fill-rule: evenodd;
+                }    </style>
+            </defs>
+            <path id="Фигура_3" data-name="Фигура 3" class="cls-1"
+                  d="M1775,6224.52S1545.85,6025,1355.58,6025.89s-349.89,26.99-460.08,26.56-466.822-39.88-536.918-28.3S214.638,6090.75,185.988,6225l0.012,1H1775v-1.48Z"
+                  transform="translate(-186 -6022.03)"></path>
+        </svg>
+    </div>
+</footer>
+
+<div id="scrollToTop" class="buttonToHead">
+    <button class="buttonToHead__button" type="button">
+        <svg fill="#FDDE0BFF" class="buttonToHead__blob" xmlns="http://www.w3.org/2000/svg"
+             viewBox="18.05 25.99 155.65 156.37">
+            <path
+                    d="M51.3,-51.3C65,-37.6,73.7,-18.8,73.7,0C73.7,18.8,65,37.6,51.3,53.9C37.6,70.2,18.8,84,1.8,82.2C-15.2,80.4,-30.3,63,-46.4,46.7C-62.5,30.3,-79.6,15.2,-81.7,-2.2C-83.9,-19.5,-71.3,-39.1,-55.2,-52.8C-39.1,-66.5,-19.5,-74.4,-0.4,-74C18.8,-73.6,37.6,-65,51.3,-51.3Z"
+                    transform="translate(100 100)"></path>
+        </svg>
+        <svg class="buttonToHead__arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             version="1.1" id="Capa_1" x="0px" y="0px" style="enable-background:new 0 0 512.002 512.002;"
+             xml:space="preserve" viewBox="117.74 0 276.52 512"><g>	<g>		<path
+                d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105    L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795    l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"></path>	</g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g></svg>
+    </button>
+</div>
+
+<div class="orderPopup">
+    <div class="orderPopup__window">
+        <div class="orderPopup-main__wrapper">
+            <div class="orderPopup__heading">
+                <p class="orderPopup__title">Заказать свежие фрукты!</p>
+                <button type="button" class="orderPopup__exit">
+                    <svg class="orderPopup__exit-xmark" xmlns="http://www.w3.org/2000/svg" viewBox="-0.44 -0.44 26 26">
+                        <defs>
+                            <style>      .cls-1 {
+                                stroke-linecap: round;
+                                stroke-width: 3px;
+                                fill-rule: evenodd;
+                            }    </style>
+                        </defs>
+                        <path id="Shape_3_copy" data-name="Shape 3 copy" class="cls-1" d="M1822,5803l-23-23m23,0-23,23"
+                              transform="translate(-1797.94 -5778.94)"></path>
+                    </svg>
+                </button>
+            </div>
+            <form class="orderPopup__form">
+                <div class="form__wrapper">
+                    <label class="form__label">
+                        <input id="formInputFruit" class="form__input inputFruit" type="text" placeholder="Хочу заказать...">
+                        <span class="input__invalidForm">
+                        <svg class="input__invalidForm-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path
+                                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+                    </span>
+                    </label>
+                    <p class="input__invalidForm-text">
+                        Необходимо указать Ваш заказ!
+                    </p>
+                </div>
+                <div class="form__wrapper">
+                    <label class="form__label">
+                        <input id="formInputCustomer" class="form__input inputCustomer" type="text" placeholder="Ваше имя">
+                        <span class="input__invalidForm">
+                    <svg class="input__invalidForm-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path
+                            d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+                </span>
+                    </label>
+                    <p class="input__invalidForm-text">
+                        Необходимо указать Ваше имя!
+                    </p>
+                </div>
+                <div class="form__wrapper">
+                    <label class="form__label">
+                        <input id="formInputPhone" class="form__input phoneMask inputPhone" type="text" placeholder="Ваш номер телефона">
+                        <span class="input__invalidForm">
+                    <svg class="input__invalidForm-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path
+                            d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+                </span>
+                    </label>
+                    <p class="input__invalidForm-text">
+                        Необходимо указать контактный номер телефона!
+                    </p>
+                </div>
+                <label class="form__label-checkbox">
+                    <input class="form__input-checkbox" type="checkbox" name="agreeNewsPromo" value="agree"> Соглашаюсь получать новости и спец. предложения*
+                </label>
+                <button id="form__button-action" class="form__button button" type="button">Отправить заявку</button>
+            </form>
+        </div>
+        <div class="orderPopup-success">
+            <div class="orderPopup-success__heading">
+                <button type="button" class="orderPopup__exit">
+                    <svg class="orderPopup__exit-xmark" xmlns="http://www.w3.org/2000/svg" viewBox="-0.44 -0.44 26 26">
+                        <defs>
+                            <style>      .cls-1 {
+                                stroke-linecap: round;
+                                stroke-width: 3px;
+                                fill-rule: evenodd;
+                            }    </style>
+                        </defs>
+                        <path id="Shape_3_copy" data-name="Shape 3 copy" class="cls-1" d="M1822,5803l-23-23m23,0-23,23"
+                              transform="translate(-1797.94 -5778.94)"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="orderPopup-success__text">
+                Спасибо за заказ, мы свяжемся с вами в ближайшее время!
+            </div>
+        </div>
+        <div class="orderPopup__breakline"></div>
+        <div class="orderPopup__logo">
+            <img src="dist/images/Logo.png" alt="Logo Exotic fruits">
+        </div>
+    </div>
+    <div class="orderPopup-background"></div>
+</div>
+<div class="loader">
+    <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>
+
+<script src="dist/js/jquery-3.6.4.min.js"></script>
+<script src="dist/js/jquery-ui.min.js"></script>
+<script src="dist/js/wow.min.js"></script>
+<script src="dist/js/jquery.inputmask.min.js"></script>
+<script src="dist/js/slick.min.js"></script>
+<script src="dist/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,2780 @@
+@import "styles_variables";
+
+@media screen and (max-width: 1920px) {
+  .side-palm-bottom {
+    max-width: 350px;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 1815px) {
+  .side-palm-bottom {
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 1730px) {
+  .side-palm-bottom {
+    max-width: 270px;
+  }
+}
+
+@media screen and (max-width: 1640px) {
+  .side-palm-bottom {
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 1640px) {
+  .side-palm-bottom {
+    max-width: 230px;
+  }
+}
+
+@media screen and (max-width: 1589px) {
+  .footer {
+    width: 100%;
+
+    .footer__background-shape {
+      width: 100%;
+      background-image: url("../../dist/images/footer_blob(@1589px).png");
+    }
+  }
+
+  .side-palm-bottom {
+    bottom: 700px;
+  }
+
+}
+
+@media screen and (max-width: 1470px) {
+  .side-palm-bottom {
+    max-width: 210px;
+  }
+}
+
+@media screen and (max-width: 1460px) {
+  .side-palm-top {
+    max-width: 280px;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.side-palm-middle {
+  max-width: 250px;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1435px) {
+  .side-palm-bottom {
+    max-width: 180px;
+  }
+}
+
+@media screen and (max-width: 1386px) {
+  .header__background-shape {
+    top: 0;
+    left: 0;
+    transform: unset;
+    width: 100%;
+  }
+  .side-palm-bottom {
+    max-width: 160px;
+    bottom: 750px;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .side-palm-top {
+    max-width: 240px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .side-palm-top {
+    max-width: 210px;
+  }
+  .side-palm-middle {
+    max-width: 220px;
+  }
+  .side-palm-bottom {
+    max-width: 150px;
+  }
+}
+
+@media screen and (max-width: 1235px) {
+  .header {
+    margin-bottom: unset;
+  }
+  .description {
+    .description__container {
+      column-gap: 10px;
+
+      .description__info {
+        padding-top: 148px;
+        //width: 570px;
+        .description__title {
+          width: 570px;
+        }
+      }
+
+      .description__image {
+        //width: 50%;
+        position: relative;
+        right: unset;
+        bottom: unset;
+
+        img {
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1139px) {
+  .whyWe {
+    .whyWe__container {
+      .whyWe__advantages {
+        column-gap: 20px;
+        justify-content: space-between;
+
+        .advantage__center {
+          padding-right: unset;
+        }
+      }
+    }
+  }
+  .ourFruits {
+    .ourFruits__container {
+      padding: 0 100px;
+
+      .ourFruits__list {
+        column-gap: unset;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+      }
+    }
+  }
+  .reviews {
+    .reviews__container {
+      .reviews__content {
+        display: flex;
+        justify-content: center;
+        column-gap: 25px;
+        height: 236px;
+
+        .reviews__arrow {
+          position: relative;
+        }
+
+        .reviews__slider {
+          width: 860px;
+          margin: unset;
+
+          .slider__wrapper {
+            width: 400px;
+            height: 236px;
+
+            .slider__blob {
+              width: 400px;
+            }
+
+            .reviews__review {
+              padding-top: 35px;
+              width: 400px;
+              row-gap: 15px;
+              .slider__review {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .side-palm-middle {
+    max-width: 200px;
+  }
+  .side-palm-bottom {
+    bottom: 800px;
+  }
+}
+
+@media screen and (max-width: 1055px) {
+  .orderingGuide {
+    .orderingGuide__container {
+      .orderingGuide__timeline {
+        .orderingGuide__stage1 {
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1049px) {
+  .header {
+    .header__container {
+      .header__logo {
+        .headerLogo-yellow {
+          display: none;
+        }
+
+        .headerLogo-white {
+          height: 37px;
+          width: 72px;
+          display: block;
+        }
+      }
+    }
+  }
+  .header__background-shape {
+    background-image: url("../../dist/images/header_blob(@1049px).png");
+
+    .background-shape-screen1386 {
+      display: none;
+    }
+
+    .background-shape-screen1049 {
+      //display: flex;
+      display: none;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .side-palm-top {
+    top: 800px;
+  }
+  .about {
+    .about__container {
+      column-gap: 40px;
+    }
+  }
+  .side-palm-middle {
+    max-width: 150px;
+  }
+  .daysProduct {
+    .daysProduct__container {
+      .daysProduct__content {
+        column-gap: unset;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1047px) {
+  .daysProduct {
+    .daysProduct__container {
+      .daysProduct__content {
+        .daysProduct__description {
+          width: 289px;
+        }
+      }
+    }
+  }
+  .orderingGuide {
+    .orderingGuide__container {
+      .orderingGuide__timeline {
+        .orderingGuide__stage3 {
+          right: 365px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .daysProduct {
+    .daysProduct__container {
+      .daysProduct__content {
+        .daysProduct__fruits {
+          width: 360px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .reviews {
+    .reviews__container {
+      .reviews__content {
+        height: 290px;
+        .reviews__slider {
+          width: 525px;
+          //margin: unset;
+          .slider__wrapper {
+            width: 495px;
+            height: 290px;
+
+            .slider__blob {
+              width: 495px;
+            }
+
+            .reviews__review {
+              padding-top: 44px;
+              width: 495px;
+              row-gap: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .orderingGuide {
+    .orderingGuide__container {
+      .orderingGuide__timeline {
+        .orderingGuide__stage3 {
+          right: 345px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 937px) {
+  .header {
+    .header__container {
+      .header__logo {
+        .headerLogo-yellow {
+          display: none;
+        }
+
+        .headerLogo-white {
+          display: block;
+          width: 72px;
+        }
+      }
+    }
+  }
+  .description {
+    .description__container {
+      .description__image {
+        position: absolute;
+        top: 295px;
+        right: 115px;
+        width: 355px;
+      }
+    }
+  }
+  .whyWe {
+    .whyWe__container {
+      .whyWe__advantages {
+        justify-content: center;
+        column-gap: 25px;
+        //flex-direction: column;
+        //align-items: center;
+        //row-gap: 30px;
+        .advantage {
+          max-width: 200px;
+          flex-direction: column;
+          row-gap: 20px;
+
+          .advantage__blob {
+            align-self: center;
+          }
+
+          .advantage__text {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .header {
+    .header__container {
+      column-gap: unset;
+      justify-content: space-between;
+    }
+  }
+  .ourFruits {
+    .ourFruits__container {
+      padding: 0 30px;
+    }
+  }
+  .orderingGuide {
+    .orderingGuide__container {
+      .orderingGuide__timeline {
+        .orderingGuide__stage1 {
+          top: 55px;
+        }
+      }
+    }
+  }
+  .orderingGuide {
+    .orderingGuide__container {
+      .orderingGuide__timeline {
+        .orderingGuide__stage2 {
+          left: 215px;
+        }
+
+        .orderingGuide__stage4 {
+          right: 80px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 927px) {
+  .daysProduct {
+    .daysProduct__container {
+      .daysProduct__content {
+        .daysProduct__fruits {
+          width: 320px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .header {
+    .header__container {
+      .header__logo {
+        .headerLogo-yellow {
+          display: none;
+        }
+
+        .headerLogo-white {
+          display: block;
+          width: 72px;
+        }
+      }
+    }
+  }
+  .about {
+    .about__container {
+      column-gap: 25px;
+    }
+  }
+  .description {
+    .description__container {
+      .description__image {
+        right: 60px;
+        width: 310px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 872px) {
+  .daysProduct {
+    .daysProduct__container {
+      .daysProduct__content {
+        .daysProduct__fruits {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 852px) {
+  .daysProduct {
+    .daysProduct__container {
+      .daysProduct__content {
+        display: grid;
+        height: unset;
+        //grid-template-columns: 95px 1fr;
+        grid-template-columns: 150px 1fr;
+        row-gap: 25px;
+
+        .daysProduct__promotion {
+          order: 1;
+          justify-self: flex-end;
+          height: 406px;
+        }
+
+        .daysProduct__fruits {
+          order: 2;
+          //width: 75%;
+          width: 85%;
+          justify-self: center;
+          max-height: 406px;
+
+          .daysProduct__mainFruit {
+            max-height: 406px;
+            object-fit: contain;
+          }
+        }
+
+        .daysProduct__carousel {
+          width: 100%;
+          order: 3;
+          grid-column-start: 1;
+          grid-column-end: -1;
+          flex-direction: row;
+          padding-bottom: unset;
+          justify-content: flex-start;
+
+          .daysProduct__arrow {
+            width: 40px;
+            height: 100%;
+            align-items: center;
+
+            .daysProduct__arrow-prev-up {
+              display: none;
+            }
+
+            .daysProduct__arrow-prev-left {
+              display: block;
+              height: 21px;
+              width: 10px;
+              transform: rotate(180deg);
+            }
+
+            .daysProduct__arrow-next-down {
+              display: none;
+            }
+
+            .daysProduct__arrow-next-right {
+              display: block;
+              height: 21px;
+              width: 10px;
+            }
+          }
+
+          .daysProduct__slider {
+            width: 477px;
+
+            .slider__item-wrapper {
+              width: 159px;
+            }
+          }
+        }
+
+        .daysProduct__description {
+          padding-top: unset;
+          grid-column: 1 / -1;
+          width: 350px;
+          order: 4;
+          justify-self: flex-start;
+          padding-left: 55px;
+        }
+      }
+    }
+  }
+  .side-palm-middle {
+    max-width: 350px;
+    top: 2400px;
+  }
+  .ourFruits {
+    .ourFruits__container {
+      .ourFruits__list {
+        .ourFruits__item {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 849px) {
+  .side-palm-bottom {
+    max-width: 130px;
+    bottom: 865px;
+  }
+  .orderingGuide {
+    .orderingGuide__container {
+      .orderingGuide__timeline {
+        .orderingGuide__stage2 {
+          left: 180px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 805px) {
+  .description {
+    .description__container {
+      .description__image {
+        right: 30px;
+        width: 280px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 783px) {
+  .header {
+    .header__container {
+      flex-direction: column;
+      row-gap: 20px;
+
+      .header__logo {
+        align-self: flex-start;
+      }
+
+      .menu {
+        width: 100%;
+        justify-content: center;
+
+        .menu__list {
+          width: 100%;
+          column-gap: unset;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+  .description {
+    .description__container {
+      .description__info {
+        padding-top: 50px;
+      }
+
+      .description__image {
+        top: 238px;
+      }
+    }
+  }
+  .orderingGuide {
+    .orderingGuide__container {
+      .orderingGuide__timeline {
+        .orderingGuide__stage1 {
+          top: 25px;
+        }
+
+        .orderingGuide__stage2 {
+          left: 140px;
+        }
+
+        .orderingGuide__stage3 {
+          right: 275px;
+        }
+      }
+    }
+  }
+  .side-palm-bottom {
+    max-width: 110px;
+  }
+  .faq {
+    .faq__container {
+      .faq__accordion {
+        .accordion__heading {
+          padding-right: 70px;
+          height: max-content;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 734px) {
+  .description {
+    .description__container {
+      .description__image {
+        right: 5px;
+      }
+    }
+  }
+  .about {
+    .about__container {
+      column-gap: 20px;
+
+      .about__info {
+        padding-top: 0;
+      }
+    }
+  }
+  .side-palm-bottom {
+    bottom: 900px;
+  }
+}
+
+@media screen and (max-width: 722px) {
+  .ourFruits {
+    .ourFruits__container {
+      padding: 0 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .description {
+    .description__container {
+      .description__image {
+        width: 260px;
+        right: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 692px) {
+  .header {
+    margin-bottom: 50px;
+  }
+  .description {
+    .description__container {
+      justify-content: center;
+
+      .description__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+
+        .description__title {
+          text-align: center;
+        }
+
+        .description__description {
+          text-align: center;
+          margin-bottom: 220px;
+        }
+
+      }
+
+      .description__image {
+        top: 235px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 225px;
+      }
+    }
+  }
+  .about {
+    width: 100%;
+
+    .about__container {
+      width: 100%;
+      align-items: flex-start;
+
+      .about__image {
+        flex-shrink: 0;
+        width: 50%;
+        height: max-content;
+
+        .about__image-blob {
+          width: 100%;
+          height: unset;
+          object-fit: contain;
+        }
+
+        .about__fruit {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .side-palm-top {
+    top: 780px;
+  }
+  .side-palm-middle {
+    width: 265px;
+  }
+  .side-palm-bottom {
+    bottom: 1410px;
+  }
+  .ourFruits {
+    .ourFruits__container {
+      .ourFruits__switcher {
+        border-color: transparent;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 15px;
+        height: unset;
+        width: 350px;
+
+        .switcher__item {
+          height: 42px;
+          border: 2px solid $color_background_button;
+          border-radius: 23.5px;
+          //box-sizing: border-box;
+        }
+      }
+    }
+  }
+  .orderingGuide {
+    //padding-top: 30px;
+    //margin-bottom: 65px;
+    .orderingGuide__container {
+      .orderingGuide__timeline {
+        height: 550px;
+        padding: unset;
+
+        .orderingGuide__image {
+          display: none;
+        }
+
+        .orderingGuide__image1-2 {
+          object-fit: contain;
+          width: 75%;
+          display: block;
+          position: absolute;
+          top: 30px;
+          right: -15px;
+        }
+
+        .orderingGuide__image2-2 {
+          object-fit: contain;
+          //width: 306px;
+          width: 75%;
+          display: block;
+          position: absolute;
+          bottom: 50px;
+          left: -15px;
+        }
+
+        .orderingGuide__stage1 {
+          top: 0;
+          left: 220px;
+        }
+
+        .orderingGuide__stage2 {
+          top: 100px;
+          bottom: unset;
+          left: unset;
+          right: 50px;
+          max-width: 145px;
+        }
+
+        .orderingGuide__stage3 {
+          top: 330px;
+          left: 0;
+          max-width: 88px;
+        }
+
+        .orderingGuide__stage4 {
+          bottom: 100px;
+          right: 55px;
+          max-width: 110px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
+  .header {
+    .header__container {
+      flex-direction: row;
+
+      .menu {
+        display: none;
+      }
+
+      .bMenu__window {
+        display: flex;
+        z-index: 10;
+        width: 100%;
+        height: 300px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.75), rgb(0, 0, 0));
+        animation: bMenuShow .35s ease-in-out;
+
+        .menu__list {
+          flex-direction: column;
+          align-items: center;
+          row-gap: 25px;
+
+          .menu__item {
+            display: flex;
+            justify-content: center;
+            width: max-content;
+
+            .menu__link {
+              color: $color_background_shape;
+            }
+          }
+        }
+        .menuCloseButton {
+          position: absolute;
+          top: 53px;
+          right: 15px;
+          display: flex;
+          background: none;
+          border: none;
+          width: 21px;
+          height: 21px;
+
+          .menuClose__exit-xmark {
+            width: 21px;
+            height: 21px;
+            stroke: $color_background_shape;
+          }
+        //.menuCloseButton {
+        //  position: absolute;
+        //  top: 15px;
+        //  right: 15px;
+        //  display: flex;
+        //  background: none;
+        //  border: none;
+        //  width: 20px;
+        //  height: 20px;
+        //
+        //  .menuClose__exit-xmark {
+        //    width: 31px;
+        //    height: 31px;
+        //    stroke: $color_background_shape;
+        //  }
+        }
+      }
+
+      .bMenuHide {
+        animation: bMenuHide .5s ease-in-out;
+      }
+      .burger-menu {
+        cursor: pointer;
+        display: none;
+
+        .burger-icon {
+          width: 30px;
+          height: 21px;
+        }
+      }
+      .burger-menuShow {
+        display: flex;
+      }
+    }
+  }
+  .description {
+    .description__container {
+      .description__info {
+        max-width: 570px;
+        width: unset;
+
+        .description__title {
+          max-width: 570px;
+          width: unset;
+        }
+      }
+    }
+  }
+  .ourFruits {
+    .ourFruits__container {
+      .ourFruits__list {
+        .ourFruits__item {
+          width: 250px;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  .reviews {
+    .reviews__container {
+      .reviews__content {
+        column-gap: 25px;
+
+        .reviews__slider {
+          width: 425px;
+
+          .slider__wrapper {
+            width: 425px;
+            margin: 0;
+
+            .slider__blob {
+              width: 425px;
+              object-fit: contain;
+            }
+
+            .slider__aboutAuthor {
+              .author__name {
+                font-size: 18px;
+              }
+            }
+
+            .reviews__review {
+              padding-top: 60px;
+              row-gap: 15px;
+              width: 425px;
+
+              .slider__review {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .side-palm-middle {
+    width: 225px;
+  }
+}
+
+@media screen and (max-width: 594px) {
+  .description {
+    .description__container {
+      .description__image {
+        top: 286px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .about {
+    .about__container {
+      .about__image {
+        transform: translateY(82px);
+      }
+    }
+  }
+  .daysProduct {
+    .daysProduct__container {
+      .daysProduct__content {
+        .daysProduct__carousel {
+          justify-content: center;
+
+          .daysProduct__arrow {
+            width: 25px;
+          }
+
+          .daysProduct__slider {
+            width: 350px;
+
+            .slider__item-wrapper {
+              width: 118px;
+            }
+          }
+        }
+
+        .daysProduct__description {
+          padding-left: unset;
+          justify-self: center;
+        }
+      }
+    }
+  }
+  .side-palm-middle {
+    top: 2475px;
+    width: 150px;
+  }
+  .orderingGuide {
+    .orderingGuide__container {
+      .orderingGuide__timeline {
+        .orderingGuide__stage2 {
+          right: 15px;
+        }
+      }
+    }
+  }
+  .buttonToHead {
+    right: 25px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .reviews {
+    .reviews__container {
+      .reviews__content {
+        height: 195px;
+        column-gap: 15px;
+
+        .reviews__slider {
+          width: 325px;
+
+          .slider__wrapper {
+            width: 325px;
+
+            .slider__blob {
+              width: 325px;
+              height: 195px;
+            }
+
+            .reviews__review {
+              padding-top: 30px;
+              row-gap: 15px;
+              height: 195px;
+              width: 325px;
+
+              .slider__aboutAuthor {
+                .author__name {
+                  font-size: 16px;
+                }
+
+                .author__photo {
+                  width: 50px;
+                  height: 50px;
+                }
+              }
+
+              .slider__review {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 529px) {
+
+  .about {
+    .about__container {
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+
+      .about__image {
+        position: absolute;
+        top: 70px;
+        width: 283px;
+        height: 263px;
+        left: unset;
+        right: unset;
+        transform: unset;
+        justify-content: center;
+
+        .about__image-blob {
+          width: 263px;
+          height: 263px;
+        }
+
+        .about__fruit {
+          width: 250px;
+          height: 164px;
+          left: 0;
+          top: 36px;
+        }
+      }
+
+      .about__info {
+        row-gap: 335px;
+
+        .about__title {
+          text-align: center;
+        }
+
+        .about__description {
+          max-width: 300px;
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .side-palm-middle {
+    width: 130px;
+    top: 2690px;
+  }
+  .daysProduct {
+    .daysProduct__container {
+      .daysProduct__content {
+        grid-template-columns: 95px 1fr;
+
+        .daysProduct__fruits {
+          padding: unset;
+        }
+      }
+    }
+  }
+  .whyWe {
+    .whyWe__container {
+      .whyWe__advantages {
+        flex-direction: column;
+        column-gap: unset;
+        width: 100%;
+        row-gap: 25px;
+
+        .advantage {
+          max-width: unset;
+          align-items: center;
+          width: 100%;
+          flex-direction: row;
+          row-gap: unset;
+
+          .advantage__text {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  .ourFruits {
+    .ourFruits__container {
+      .ourFruits__list {
+        .ourFruits__item {
+          width: 200px;
+          height: 400px;
+
+          .ourFruits__fruitTitle {
+            text-align: center;
+            height: 54px;
+            flex-shrink: 0;
+          }
+        }
+      }
+    }
+  }
+  .orderPopup {
+    padding: 0 15px;
+    box-sizing: border-box;
+
+    .orderPopup__window {
+      width: 100%;
+    }
+  }
+  .orderingGuide {
+    .orderingGuide__container {
+      .orderingGuide__timeline {
+        .orderingGuide__stage1 {
+          left: 150px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 457px) {
+  .header {
+    .header__container {
+      .bMenu__window {
+        height: 100%;
+      }
+    }
+  }
+  .description {
+    .description__container {
+      .description__info {
+        .description__title {
+          font-size: 38px;
+        }
+
+        .description__description {
+          font-size: 16px;
+        }
+      }
+
+      .description__image {
+        top: 255px;
+      }
+    }
+  }
+  .faq {
+    .faq__title {
+      padding: 0 15px;
+    }
+  }
+  .orderingGuide {
+    .orderingGuide__container {
+      .orderingGuide__timeline {
+        height: 475px;
+
+        .orderingGuide__stage3 {
+          top: 230px;
+        }
+      }
+    }
+  }
+  .side-palm-top {
+    top: 815px;
+  }
+  .side-palm-middle {
+    width: 100px;
+  }
+  .side-palm-bottom {
+    bottom: 1410px;
+  }
+
+}
+
+@media screen and (max-width: 435px) {
+  .header {
+    margin-bottom: 50px;
+
+    .header__container {
+      flex-direction: row;
+
+      .menu {
+        display: none;
+      }
+
+      .bMenu__window {
+        display: flex;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.75), rgb(0, 0, 0));
+        animation: bMenuShow .35s ease-in-out;
+
+        .menu__list {
+          flex-direction: column;
+          align-items: center;
+          row-gap: 25px;
+
+          .menu__item {
+            display: flex;
+            justify-content: center;
+            width: max-content;
+
+            .menu__link {
+              color: $color_background_shape;
+            }
+          }
+        }
+
+        .menuCloseButton {
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          display: flex;
+          background: none;
+          border: none;
+          width: 20px;
+          height: 20px;
+
+          .menuClose__exit-xmark {
+            width: 20px;
+            height: 20px;
+            stroke: $color_background_shape;
+          }
+        }
+      }
+
+      .bMenuHide {
+        animation: bMenuHide .5s ease-in-out;
+      }
+
+      .burger-menu {
+        .burger-icon {
+          width: 30px;
+          height: 21px;
+        }
+      }
+    }
+  }
+  .side-palm-top {
+    width: 85px;
+    top: 865px;
+  }
+  .side-palm-middle {
+    width: 70px;
+    top: 2755px;
+  }
+  .side-palm-bottom {
+    width: 90px;
+    bottom: 180px;
+  }
+  .description {
+    margin-bottom: 180px;
+
+    .description__container {
+      .description__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+
+        .description__title {
+          max-width: 265px;
+          text-align: center;
+          font-size: 28px;
+          margin-bottom: 286px;
+          line-height: 1.179;
+        }
+
+        .description__description {
+          font-size: 14px;
+          line-height: 1.357;
+          text-align: center;
+          max-width: 225px;
+          margin-bottom: 40px;
+        }
+
+        .description__action {
+          .description__button {
+            width: 214px;
+            height: 54px;
+            font-size: 14px;
+            padding: 15px;
+            border-radius: 27px;
+          }
+        }
+      }
+
+      .description__image {
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 265px;
+      }
+    }
+  }
+  .about {
+    //margin-bottom: 95px;
+    margin-bottom: 65px;
+
+    .about__container {
+      position: relative;
+      flex-direction: column;
+
+      .about__image {
+        position: absolute;
+        top: 70px;
+        width: 283px;
+        height: 263px;
+        justify-content: center;
+
+        .about__image-blob {
+          width: 263px;
+          height: 263px;
+        }
+
+        .about__fruit {
+          width: 250px;
+          height: 164px;
+          left: 0;
+          top: 36px;
+        }
+      }
+
+      .about__info {
+        row-gap: 335px;
+
+        .about__title {
+          font-size: $font-size26;
+          text-align: center;
+        }
+
+        .about__description {
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .daysProduct {
+    padding-top: 30px;
+    //margin-bottom: 95px;
+    margin-bottom: 65px;
+
+    .daysProduct__title {
+      font-size: $font-size26;
+      margin-bottom: 50px;
+    }
+
+    .daysProduct__container {
+      .daysProduct__content {
+        grid-template-columns: 64px 1fr;
+        row-gap: 18px;
+
+        .daysProduct__promotion {
+          width: 64px;
+          height: 234px;
+
+          .daysProduct__timer {
+            .daysProduct__timerText {
+              font-size: $font-size10;
+              line-height: 1.3;
+            }
+
+            .daysProduct__circle {
+              width: 45px;
+              height: 45px;
+              row-gap: unset;
+
+              .daysProduct__bigNumber {
+                font-size: $font-size14;
+                line-height: 1;
+              }
+
+              .daysProduct__smallText {
+                font-size: $font-size8;
+                line-height: 1;
+              }
+            }
+          }
+        }
+
+        .daysProduct__fruits {
+          padding: unset;
+          width: 100%;
+          align-items: center;
+
+          .daysProduct__mainFruit {
+            width: 85%;
+          }
+
+          .daysProduct__promo20 {
+            top: 0;
+
+            .daysProduct__promo20-blob {
+              width: 44px;
+              height: 44px;
+            }
+
+            .daysProduct__promo20-text {
+              font-size: $font-size12;
+            }
+          }
+        }
+
+        .daysProduct__carousel {
+          .daysProduct__arrow {
+            width: 15px;
+
+            .daysProduct__arrow-prev-left, {
+              height: 19px;
+              width: 8px;
+            }
+
+            .daysProduct__arrow-next-right {
+              height: 19px;
+              width: 8px;
+            }
+          }
+
+          .arrow-prev {
+            justify-content: flex-start;
+          }
+
+          .arrow-next {
+            justify-content: flex-end;
+          }
+
+          .daysProduct__slider {
+            width: 260px;
+
+            .slider__item-wrapper {
+              height: 60px;
+            }
+          }
+        }
+
+        .daysProduct__description {
+          padding: 10px 0 0 0;
+          width: 100%;
+
+          .daysProduct__description-fruit {
+            .daysProduct__fruitTitle {
+              margin-bottom: 12px;
+              font-size: $font-size26;
+            }
+
+            .daysProduct__fruitDescription {
+              font-size: $font-size14;
+              margin-bottom: 16px;
+            }
+
+            .daysProduct__fruitPrice {
+              font-size: $font-size16;
+              margin-bottom: 22px;
+
+              .crossedPrice {
+                font-size: $font-size14;
+              }
+            }
+
+            .daysProduct_buttonOrder {
+              height: 55px;
+              font-size: $font-size14;
+              padding: 15px;
+              border-radius: 27.5px;
+            }
+
+            .daysProduct__fruitSoldToday {
+              font-size: $font-size12;
+            }
+          }
+        }
+      }
+    }
+  }
+  .whyWe {
+    padding-top: 30px;
+    //margin-bottom: 95px;
+    margin-bottom: 65px;
+
+    .whyWe__title {
+      font-size: $font-size26;
+      margin-bottom: 50px;
+    }
+
+    .whyWe__container {
+      .whyWe__advantages {
+        width: 100%;
+        column-gap: unset;
+        flex-direction: column;
+        row-gap: 25px;
+
+        .advantage {
+          max-width: unset;
+          width: 100%;
+          row-gap: unset;
+          flex-direction: row;
+
+          .advantage__blob {
+            width: 75px;
+            height: 75px;
+
+            .advantage__icon {
+              width: 36px;
+              height: 39px;
+            }
+          }
+
+          .advantage__text {
+            font-size: $font-size14;
+            line-height: 1.357;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  .ourFruits {
+    padding-top: 30px;
+    //margin-bottom: 125px;
+    margin-bottom: 95px;
+
+    .ourFruits__title {
+      font-size: $font-size26;
+      margin-bottom: 50px;
+    }
+
+    .ourFruits__container {
+      .ourFruits__switcher {
+        //width: unset;
+        max-width: 340px;
+        margin-bottom: 45px;
+
+        .switcher__item {
+          height: 34px;
+
+          .item__button {
+            font-size: $font-size14;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        .switcher__item1 {
+          width: 78px;
+        }
+
+        .switcher__item2 {
+          width: 155px;
+        }
+
+        .switcher__item3 {
+          width: 96px;
+        }
+
+        .switcher__item4 {
+          width: 115px;
+        }
+      }
+
+      .ourFruits__list {
+        column-gap: unset;
+        row-gap: 46px;
+
+        .ourFruits__item {
+          width: 134px;
+          height: 200px;
+
+          .item__image-wrapper {
+            align-items: flex-end;
+            margin-bottom: 10px;
+            max-height: 86px;
+
+            .item__image {
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+
+          .ourFruits__fruitTitle {
+            font-size: $font-size12;
+            margin-bottom: 15px;
+            height: unset;
+          }
+
+          .ourFruits__fruitPrice {
+            font-size: $font-size12;
+            margin-bottom: 34px;
+          }
+
+          .ourFruits__orderButton {
+            width: 90px;
+            height: 25px;
+            border-radius: 12.5px;
+            font-size: $font-size11;
+            padding: 3px;
+          }
+        }
+      }
+    }
+  }
+  .orderingGuide {
+    padding-top: 30px;
+    //margin-bottom: 95px;
+    margin-bottom: 65px;
+
+    .orderingGuide__title {
+      font-size: $font-size26;
+      margin-bottom: 60px;
+    }
+
+    .orderingGuide__container {
+      .orderingGuide__timeline {
+        height: 415px;
+        padding: unset;
+
+        .orderingGuide__image {
+          display: none;
+        }
+
+        .orderingGuide__image1-2 {
+          object-fit: contain;
+          width: 306px;
+          display: block;
+          position: absolute;
+          top: 30px;
+          right: -15px;
+        }
+
+        .orderingGuide__image2-2 {
+          object-fit: contain;
+          width: 306px;
+          display: block;
+          position: absolute;
+          bottom: 50px;
+          left: -15px;
+        }
+
+        .orderingGuide__text {
+          font-size: $font-size12;
+          line-height: 1.417;
+        }
+
+        .orderingGuide__stage1 {
+          top: 0;
+          left: 30px;
+        }
+
+        .orderingGuide__stage2 {
+          top: 100px;
+          right: 0;
+          max-width: 145px;
+        }
+
+        .orderingGuide__stage3 {
+          top: 220px;
+          left: 0;
+          max-width: 88px;
+        }
+
+        .orderingGuide__stage4 {
+          bottom: 0;
+          right: 39%;
+          max-width: 99px;
+        }
+      }
+    }
+  }
+  .buttonToHead {
+    height: 40px;
+    width: 40px;
+    right: 15px;
+    bottom: 150px;
+
+    .buttonToHead__button {
+      .buttonToHead__arrow {
+        height: 15px;
+        width: 7px;
+      }
+    }
+  }
+  .reviews {
+    padding-top: 30px;
+    margin-bottom: 95px;
+
+    .reviews__title {
+      font-size: $font-size26;
+    }
+
+    .reviews__container {
+      .reviews__content {
+        height: 171px;
+        padding-bottom: 41px;
+        position: relative;
+        column-gap: unset;
+
+        .reviews__slider {
+          order: 0;
+          width: 290px;
+
+          .slider__wrapper {
+            margin: unset;
+            width: 290px;
+            height: 171px;
+
+            .slider__blob {
+              width: 290px;
+              height: 171px;
+            }
+
+            .reviews__review {
+              padding-top: 30px;
+              padding-left: 42px;
+              padding-right: 30px;
+              row-gap: 10px;
+              width: 290px;
+
+              .slider__aboutAuthor {
+                column-gap: 10px;
+
+                .author__photo {
+                  width: 48px;
+                  height: 48px;
+                }
+
+                .author__name {
+                  font-size: $font-size12;
+                }
+              }
+
+              .slider__review {
+                font-size: $font-size11;
+                line-height: 1.182;
+              }
+            }
+          }
+        }
+
+        .reviews__arrow {
+          position: absolute;
+          height: 19px;
+          width: 11px;
+          top: unset;
+          //bottom: 0;
+          bottom: calc(0px - 9px);
+        }
+
+        .reviews__arrow-prev {
+          display: flex;
+          order: 1;
+          left: 40%;
+        }
+
+        .reviews__arrow-next {
+          display: flex;
+          order: 2;
+          right: 40%;
+          bottom: calc(0px - 8px)
+        }
+      }
+    }
+  }
+  .faq {
+    margin-bottom: 190px;
+
+    .faq__title {
+      font-size: $font-size26;
+      line-height: 1.154;
+    }
+
+    .faq__container {
+      .faq__accordion {
+        .accordion__heading {
+          height: unset;
+          min-height: 69px;
+          padding: 16px 43px 16px 16px;
+          font-size: $font-size14;
+
+          .ui-icon {
+            right: 15px;
+          }
+        }
+
+        .accordion__text {
+          padding: 16px;
+          font-size: $font-size12;
+        }
+      }
+    }
+  }
+
+
+  .orderPopup {
+    padding: 0 15px;
+    box-sizing: border-box;
+
+    .orderPopup__window {
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .orderPopup-main__wrapper {
+        .orderPopup__heading {
+          .orderPopup__title {
+            font-size: $font-size16;
+          }
+
+          .orderPopup__exit {
+            .orderPopup__exit-xmark {
+              height: 13px;
+              width: 13px;
+            }
+          }
+        }
+
+        .orderPopup__form {
+          .form__wrapper {
+            .form__label {
+              .form__input {
+                height: 40px;
+                font-size: $font-size12;
+              }
+            }
+          }
+
+          .form__label-checkbox {
+            font-size: $font-size11;
+          }
+        }
+      }
+
+      .orderPopup-success {
+        .orderPopup-success__heading {
+          height: 19px;
+
+          .orderPopup__exit {
+            .orderPopup__exit-xmark {
+              width: 13px;
+              height: 13px;
+            }
+          }
+        }
+
+        .orderPopup-success__text {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 388px) {
+  .orderingGuide {
+    .orderingGuide__container {
+      .orderingGuide__timeline {
+        .orderingGuide__stage4 {
+          right: 105px;
+        }
+      }
+    }
+  }
+  .ourFruits {
+    .ourFruits__container {
+      .ourFruits__switcher {
+        max-width: unset;
+        width: 100%;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  .header__background-shape {
+    top: 144px;
+    height: 709px;
+    background-image: url("../../dist/images/header_blob(@320px).png");
+
+  }
+  .header {
+    margin-bottom: 132px;
+
+    .header__container {
+      flex-direction: row;
+
+      .header__logo {
+        .headerLogo-white {
+          display: none;
+        }
+
+        .headerLogo-yellow {
+          display: flex;
+        }
+      }
+
+      .menu {
+        display: none;
+      }
+
+      .bMenu__window {
+        display: flex;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.75), rgb(0, 0, 0));
+        animation: bMenuShow .35s ease-in-out;
+
+        .menu__list {
+          flex-direction: column;
+          align-items: center;
+          row-gap: 25px;
+
+          .menu__item {
+            display: flex;
+            justify-content: center;
+            width: max-content;
+
+            .menu__link {
+              color: $color_background_shape;
+            }
+          }
+        }
+
+        .menuCloseButton {
+          position: absolute;
+          top: 53px;
+          right: 15px;
+          display: flex;
+          background: none;
+          border: none;
+          width: 21px;
+          height: 21px;
+
+          .menuClose__exit-xmark {
+            width: 21px;
+            height: 21px;
+            stroke: $color_background_shape;
+          }
+        }
+      }
+
+      .bMenuHide {
+        animation: bMenuHide .5s ease-in-out;
+      }
+
+      .burger-menu {
+        .burger-icon {
+          width: 30px;
+          height: 21px;
+        }
+      }
+    }
+  }
+  .side-palm-top {
+    width: 85px;
+    top: 865px;
+  }
+  .side-palm-middle {
+    width: 70px;
+    top: 2855px;
+  }
+  .side-palm-bottom {
+    width: 86px;
+    bottom: 130px;
+
+    .palmBottomMain {
+      display: none;
+    }
+
+    .palmBottom320 {
+      display: block;
+    }
+  }
+  .description {
+    margin-bottom: 177px;
+
+    .description__container {
+      .description__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+
+        .description__title {
+          max-width: 265px;
+          text-align: center;
+          font-size: 28px;
+          margin-bottom: 280px;
+          line-height: 1.179;
+        }
+
+        .description__description {
+          font-size: 14px;
+          line-height: 1.357;
+          text-align: center;
+          max-width: 225px;
+          margin-bottom: 34px;
+        }
+
+        .description__action {
+          .description__button {
+            width: 214px;
+            height: 54px;
+            font-size: 14px;
+            padding: 15px;
+            border-radius: 27px;
+          }
+        }
+      }
+
+      .description__image {
+        top: 155px;
+        left: 50%;
+        transform: translateX(-45%);
+        width: 265px;
+      }
+    }
+  }
+  .about {
+    //margin-bottom: 95px;
+    margin-bottom: 65px;
+
+    .about__container {
+      position: relative;
+      flex-direction: column;
+
+      .about__image {
+        position: absolute;
+        top: 70px;
+        width: 283px;
+        height: 263px;
+        justify-content: center;
+
+        .about__image-blob {
+          width: 263px;
+          height: 263px;
+        }
+
+        .about__fruit {
+          width: 250px;
+          height: 164px;
+          left: 0;
+          top: 36px;
+        }
+      }
+
+      .about__info {
+        row-gap: 335px;
+
+        .about__title {
+          font-size: $font-size26;
+          text-align: center;
+        }
+
+        .about__description {
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .daysProduct {
+    padding-top: 30px;
+    //margin-bottom: 95px;
+    margin-bottom: 65px;
+
+    .daysProduct__title {
+      font-size: $font-size26;
+      margin-bottom: 50px;
+    }
+
+    .daysProduct__container {
+      .daysProduct__content {
+        grid-template-columns: 64px 1fr;
+        row-gap: 18px;
+
+        .daysProduct__promotion {
+          width: 64px;
+          height: 234px;
+
+          .daysProduct__timer {
+            row-gap: 7px;
+            padding-top: 17px;
+            padding-bottom: 20px;
+
+            .daysProduct__timerText {
+              font-size: $font-size10;
+              line-height: 1.3;
+            }
+
+            .daysProduct__circle {
+              width: 45px;
+              height: 45px;
+              row-gap: unset;
+
+              .daysProduct__bigNumber {
+                font-size: $font-size14;
+                line-height: 1;
+              }
+
+              .daysProduct__smallText {
+                font-size: $font-size8;
+                line-height: 1;
+              }
+            }
+          }
+        }
+
+        .daysProduct__fruits {
+          padding: unset;
+          width: 100%;
+          align-items: center;
+
+          .daysProduct__mainFruit {
+            width: 85%;
+          }
+
+          .daysProduct__promo20 {
+            top: 0;
+
+            .daysProduct__promo20-blob {
+              width: 44px;
+              height: 44px;
+            }
+
+            .daysProduct__promo20-text {
+              font-size: $font-size12;
+            }
+          }
+        }
+
+        .daysProduct__carousel {
+          .daysProduct__arrow {
+            width: 15px;
+
+            .daysProduct__arrow-prev-left, {
+              height: 19px;
+              width: 8px;
+            }
+
+            .daysProduct__arrow-next-right {
+              height: 19px;
+              width: 8px;
+            }
+          }
+
+          .arrow-prev {
+            justify-content: flex-start;
+          }
+
+          .arrow-next {
+            justify-content: flex-end;
+          }
+
+          .daysProduct__slider {
+            width: 260px;
+
+            .slider__item-wrapper {
+              height: 60px;
+            }
+          }
+        }
+
+        .daysProduct__description {
+          padding: 6px 0 0 0;
+          width: 100%;
+
+          .daysProduct__description-fruit {
+            .daysProduct__fruitTitle {
+              margin-bottom: 12px;
+              font-size: $font-size26;
+            }
+
+            .daysProduct__fruitDescription {
+              font-size: $font-size14;
+              margin-bottom: 16px;
+            }
+
+            .daysProduct__fruitPrice {
+              font-size: $font-size16;
+              margin-bottom: 24px;
+
+              .crossedPrice {
+                font-size: $font-size14;
+              }
+            }
+
+            .daysProduct_buttonOrder {
+              height: 55px;
+              font-size: $font-size14;
+              padding: 15px;
+              border-radius: 27.5px;
+              width: 100%;
+              margin-bottom: 28px;
+            }
+
+            .daysProduct__fruitSoldToday {
+              font-size: $font-size12;
+            }
+          }
+        }
+      }
+    }
+  }
+  .whyWe {
+    padding-top: 30px;
+    //margin-bottom: 95px;
+    margin-bottom: 65px;
+
+    .whyWe__title {
+      font-size: $font-size26;
+      margin-bottom: 50px;
+    }
+
+    .whyWe__container {
+      .whyWe__advantages {
+        width: 100%;
+        column-gap: unset;
+        flex-direction: column;
+        row-gap: 25px;
+
+        .advantage {
+          max-width: unset;
+          width: 100%;
+          row-gap: unset;
+          flex-direction: row;
+
+          .advantage__blob {
+            width: 75px;
+            height: 75px;
+
+            .advantage__icon {
+              width: 36px;
+              height: 39px;
+            }
+          }
+
+          .advantage__text {
+            font-size: $font-size14;
+            line-height: 1.357;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  .ourFruits {
+    padding-top: 30px;
+    //margin-bottom: 125px;
+    margin-bottom: 95px;
+
+    .ourFruits__title {
+      font-size: $font-size26;
+      margin-bottom: 50px;
+    }
+
+    .ourFruits__container {
+      .ourFruits__switcher {
+        width: unset;
+        margin-bottom: 35px;
+
+        .switcher__item {
+          height: 34px;
+          box-sizing: border-box;
+
+          .item__button {
+            font-size: $font-size14;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        .switcher__item1 {
+          width: 78px;
+        }
+
+        .switcher__item2 {
+          width: 155px;
+        }
+
+        .switcher__item3 {
+          width: 96px;
+        }
+
+        .switcher__item4 {
+          width: 115px;
+        }
+      }
+
+      .ourFruits__list {
+        column-gap: 22px;
+        row-gap: 42px;
+
+        .ourFruits__item {
+          width: 134px;
+          height: 200px;
+
+          .item__image-wrapper {
+            align-items: flex-end;
+            margin-bottom: unset;
+            max-height: 86px;
+
+            .item__image {
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+
+          .ourFruits__fruitTitle {
+            font-size: $font-size12;
+            margin-bottom: 15px;
+            height: unset;
+          }
+
+          .ourFruits__fruitPrice {
+            font-size: $font-size12;
+            margin-bottom: 34px;
+          }
+
+          .ourFruits__orderButton {
+            width: 90px;
+            height: 25px;
+            border-radius: 12.5px;
+            font-size: $font-size11;
+            padding: 3px;
+          }
+        }
+      }
+    }
+  }
+  .orderingGuide {
+    padding-top: 30px;
+    //margin-bottom: 95px;
+    margin-bottom: 65px;
+
+    .orderingGuide__title {
+      font-size: $font-size26;
+      margin-bottom: 60px;
+    }
+
+    .orderingGuide__container {
+      .orderingGuide__timeline {
+        height: 415px;
+        padding: unset;
+
+        .orderingGuide__image {
+          display: none;
+        }
+
+        .orderingGuide__image1-2 {
+          object-fit: contain;
+          width: 306px;
+          display: block;
+          position: absolute;
+          top: 30px;
+          right: -15px;
+        }
+
+        .orderingGuide__image2-2 {
+          object-fit: contain;
+          width: 306px;
+          display: block;
+          position: absolute;
+          bottom: 50px;
+          left: -15px;
+        }
+
+        .orderingGuide__text {
+          font-size: $font-size12;
+          line-height: 1.417;
+        }
+
+        .orderingGuide__stage1 {
+          top: 0;
+          left: 30px;
+        }
+
+        .orderingGuide__stage2 {
+          top: 100px;
+          right: 0;
+          max-width: 145px;
+        }
+
+        .orderingGuide__stage3 {
+          top: 220px;
+          left: 0;
+          max-width: 88px;
+        }
+
+        .orderingGuide__stage4 {
+          bottom: 0;
+          right: 55px;
+          max-width: 110px;
+        }
+      }
+    }
+  }
+  .buttonToHead {
+    height: 40px;
+    width: 40px;
+    right: 15px;
+    bottom: 100px;
+
+    .buttonToHead__button {
+      .buttonToHead__arrow {
+        height: 15px;
+        width: 7px;
+      }
+    }
+  }
+  .reviews {
+    padding-top: 30px;
+    margin-bottom: 95px;
+
+    .reviews__title {
+      font-size: $font-size26;
+      margin-bottom: 45px;
+    }
+
+    .reviews__container {
+      .reviews__content {
+        height: 171px;
+        padding-bottom: 41px;
+        position: relative;
+        column-gap: unset;
+
+        .reviews__slider {
+          order: 0;
+          width: 290px;
+
+          .slider__wrapper {
+            margin: unset;
+            width: 290px;
+            height: 171px;
+
+            .slider__blob {
+              width: 290px;
+              height: 171px;
+            }
+
+            .reviews__review {
+              padding-top: 30px;
+              padding-left: 42px;
+              padding-right: 30px;
+              row-gap: 12px;
+              width: 290px;
+
+              .slider__aboutAuthor {
+                column-gap: 10px;
+
+                .author__photo {
+                  width: 48px;
+                  height: 48px;
+                }
+
+                .author__name {
+                  font-size: $font-size12;
+                }
+              }
+
+              .slider__review {
+                font-size: $font-size11;
+                line-height: 1.182;
+              }
+            }
+          }
+        }
+
+        .reviews__arrow {
+          position: absolute;
+          height: 19px;
+          width: 11px;
+          top: unset;
+          //bottom: 0;
+          bottom: calc(0px - 9px);
+        }
+
+        .reviews__arrow-prev {
+          display: flex;
+          order: 1;
+          left: 120px;
+        }
+
+        .reviews__arrow-next {
+          display: flex;
+          order: 2;
+          right: 120px;
+          bottom: calc(0px - 8px)
+        }
+      }
+    }
+  }
+  .faq {
+    margin-bottom: 190px;
+
+    .faq__title {
+      font-size: $font-size26;
+      line-height: 1.154;
+      margin-bottom: 49px;
+    }
+
+    .faq__container {
+      .faq__accordion {
+        .ui-accordion-header:not(.accordion__heading-first) {
+          margin: 15px 0 0 0 !important;
+        }
+
+        .accordion__heading {
+          height: unset;
+          min-height: 69px;
+          padding: 16px 43px 16px 16px;
+          font-size: $font-size14;
+
+          .ui-icon {
+            right: 15px;
+          }
+        }
+
+        .accordion__text {
+          padding: 20px 20px 20px 20px;
+          font-size: $font-size12;
+        }
+      }
+    }
+  }
+  .footer {
+    //height: 265px;
+    padding: 0 0 59px 0;
+
+    .footer__container {
+      .footer__content {
+        row-gap: 28px;
+
+        .footer__logo-socials {
+          flex-direction: column;
+          align-items: center;
+          row-gap: 30px;
+          height: unset;
+
+          .footer__socials {
+            width: 100%;
+            justify-content: center;
+            column-gap: 25px;
+
+            .socials {
+
+            }
+          }
+        }
+
+        .footer__rights {
+          font-size: $font-size12;
+          text-align: center;
+        }
+      }
+    }
+
+    .footer__background-shape {
+      height: 264px;
+      background-image: url("../../dist/images/footer_blob(@320px).png");
+    }
+  }
+  .orderPopup {
+    padding: 0 15px;
+    box-sizing: border-box;
+
+    .orderPopup__window {
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .orderPopup-main__wrapper {
+        .orderPopup__heading {
+          .orderPopup__title {
+            font-size: $font-size16;
+          }
+
+          .orderPopup__exit {
+            .orderPopup__exit-xmark {
+              height: 13px;
+              width: 13px;
+            }
+          }
+        }
+
+        .orderPopup__form {
+          .form__wrapper {
+            .form__label {
+              .form__input {
+                height: 40px;
+                font-size: $font-size12;
+              }
+            }
+          }
+
+          .form__label-checkbox {
+            font-size: $font-size11;
+          }
+        }
+      }
+
+      .orderPopup-success {
+        .orderPopup-success__heading {
+          height: 19px;
+
+          .orderPopup__exit {
+            .orderPopup__exit-xmark {
+              width: 13px;
+              height: 13px;
+            }
+          }
+        }
+
+        .orderPopup-success__text {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+}
+
+@keyframes bMenuShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bMenuHide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

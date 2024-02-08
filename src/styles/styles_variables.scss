@@ -1,0 +1,27 @@
+$color_text_main-black: #0d1a07;
+$color_text_button: #ffffff;
+$color_text_rights: #30382c;
+$color_background_shape: #fdda02;
+$color_background_promoTimer: #f5f2ed;
+$color_background_button: #1E3313FF;
+$color_background_button-hover: #101a0a;
+$color_background_daysProduct_icon: #fdde0b;
+$color_background_invalidForm: #FF3E3EFF;
+
+$form_input_height: 50px;
+$form_input_borderRadius: 10px;
+$form_input_button_borderRadius: 20px;
+
+@mixin text_text-shadow {
+  text-shadow: 0 0 11.96px rgba(194, 170, 52, 0.21);
+}
+
+// adaptive
+$font-size26: 26px;
+$font-size16: 16px;
+$font-size14: 14px;
+$font-size12: 12px;
+$font-size11: 11px;
+$font-size10: 10px;
+$font-size9: 9px;
+$font-size8: 8px;
